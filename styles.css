@@ -1,5 +1,6 @@
 .ci,hr{border-width:1px}
 body{font-size:12px;font-family:'Open Sans',sans-serif,'Lucida Grande',Tahoma,Verdana,Arial,MingLiU;letter-spacing:1px;text-decoration:none;border-style:none;margin:0;padding:0;white-space:normal;background-color:#ccc;color:#033}
+table{font-weight:700}
 hr{border-style:solid none none;margin:5px 2px 0;padding:2px;color:#900}
 small{font-size:10px}
 a:link,a:visited{color:#238}
@@ -13,7 +14,7 @@ a:hover{color:#46f}
 .h1{background-color:#eee}
 .h2{background-color:#ddd}
 .h3,.h3l{background-color:#cfc}
-.h4{background-color:#fcc}
+.h4,.h4l{background-color:#fcc}
 td{margin:auto;padding:auto}
 .tb{writing-mode:tb;white-space:nowrap}
 .xg{color:green}

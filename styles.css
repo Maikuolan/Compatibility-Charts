@@ -10,11 +10,12 @@ a:hover{color:#46f}
 .ci{background-color:#fff;border-style:solid;border-color:#aaa;text-align:left;padding:12px}
 .center,.co,body,td{text-align:center}
 .co{padding:12}
-.h1,.h2,.h3,.h4{margin:0;padding:4px;border-style:solid solid none none;border-width:1px;border-color:#999}
+.h1,.h2,.h3,.h4,.h5{margin:0;padding:4px;border-style:solid solid none none;border-width:1px;border-color:#999}
 .h1{background-color:#eee}
 .h2{background-color:#ddd}
 .h3,.h3l{background-color:#cfc}
 .h4,.h4l{background-color:#fcc}
+.h5{background-color:#eec}
 td{margin:auto;padding:auto}
 .tb{writing-mode:tb;white-space:nowrap}
 .xg{color:green}

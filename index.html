@@ -17,7 +17,7 @@
   <span class="xr">❌</span><strong>¹</strong> Not compatible due to Composer requirements (PHP &gt;= 5.3.0). Compatible when installing/updating manually.<br />
   <span class="xr">❌</span><strong>²</strong> Not compatible, but incompatibilities are very minor and can be patched easily + instructions are available.<br />
   <span class="xg">✔️</span> Compatible/Available.<br />
-  <span class="xr h4l">✔️</span> Compatible, but contains critical flaws/vulnerabilities, and should be avoided.<br />
+  ( <span class="xr h4l">✔️</span> Compatible – <span class="xr h4l">❌</span> Not compatible ) + Contains <span class="xr"><strong>critical</strong></span> flaws/vulnerabilities, and should be avoided (<a href="https://www.cvedetails.com/vendor/74/PHP.html">PHP CVEs</a> – <a href="https://php.net/releases/">PHP releases</a>).<br />
   <span class="xo">✔️</span> Not tested, but expected to be compatible/available.<br />
   <span class="xb">❓</span> Not tested and unknown.<br />
   <span class="xo">➖</span> Partially compatible (additional information will be attached when applicable; usually for when compatibility differs between sub-minor or patch releases).<br />
@@ -44,7 +44,7 @@
   <br />
   Licensing: <a href="https://github.com/Maikuolan/Compatibility-Charts/blob/gh-pages/LICENSE.txt">MIT License.</a> (Feel free to copy and adapt this page if you want).<br />
   <br />
-  This information last updated: <time datetime="2017-07-20">20th July 2017 (2017.07.20)</time>.
+  This information last updated: <time datetime="2017-07-22">22nd July 2017 (2017.07.22)</time>.
 </em></p>
 
 <hr />
@@ -52,36 +52,37 @@
 <table>
   <tr>
     <td colspan="2"></td>
-    <td class="h1" colspan="10">Supported PHP versions</td>
-    <td class="h5" colspan="8">Features</td>
+    <td class="h1t" colspan="10"><a href="https://secure.php.net/supported-versions.php">PHP versions</a></td>
+    <td class="h5" colspan="9">Features</td>
   </tr>
   <tr>
     <td colspan="2"></td>
-    <td class="h2"><span class="tb"><span class="xr">✱</span> PHP 5.0.X <small>(2004.07.13)</small></span></td>
-    <td class="h2"><span class="tb"><span class="xr">✱</span> PHP 5.1.X <small>(2005.11.24)</small></span></td>
-    <td class="h2"><span class="tb"><span class="xr">✱</span> PHP 5.2.X <small>(2006.11.02)</small></span></td>
+    <td class="h4"><span class="tb"><span class="xr">✱</span> PHP 5.0.X <small>(2004.07.13)</small></span></td>
+    <td class="h4"><span class="tb"><span class="xr">✱</span> PHP 5.1.X <small>(2005.11.24)</small></span></td>
+    <td class="h4"><span class="tb"><span class="xr">✱</span> PHP 5.2.X <small>(2006.11.02)</small></span></td>
     <td class="h2"><span class="tb"><span class="xr">✱</span> PHP 5.3.X <small>(2009.06.30)</small></span></td>
     <td class="h2"><span class="tb"><span class="xr">✱</span> PHP 5.4.X <small>(2012.03.01)</small></span></td>
     <td class="h2"><span class="tb"><span class="xr">✱</span> PHP 5.5.X <small>(2013.06.20)</small></span></td>
     <td class="h2"><span class="tb"><span class="xo">✱</span> PHP 5.6.X <small>(2014.08.28)</small></span></td>
     <td class="h1"><span class="tb"><span class="xg">✱</span> PHP 7.0.X <small>(2015.12.03)</small></span></td>
     <td class="h1"><span class="tb"><span class="xg">✱</span> PHP 7.1.X <small>(2016.12.01)</small></span></td>
-    <td class="h2"><span class="tb"><span class="xb">✱</span> PHP 7.2.X <small>(T.B.A.)</small></span></td>
+    <td class="h2"><span class="tb"><span class="xb">✱</span> PHP 7.2.X <small>(<a href="https://wiki.php.net/todo/php72">2017.11.30</a>)</small></span></td>
     <td class="h5"><span class="tb"><a href="https://packagist.org/">Composer/Packagist</a></span></td>
     <td class="h5"><span class="tb"><a href="https://pear.php.net/index.php">PEAR</a></span></td>
-    <td class="h5"><span class="tb"><a href="http://www.php-fig.org/psr/psr-1/">PSR-1 compliant</a></span></td>
-    <td class="h5"><span class="tb"><a href="http://www.php-fig.org/psr/psr-2/">PSR-2 compliant</a></span></td>
+    <td class="h5"><span class="tb"><a href="https://www.php-fig.org/psr/psr-1/">PSR-1 compliant</a></span></td>
+    <td class="h5"><span class="tb"><a href="https://www.php-fig.org/psr/psr-2/">PSR-2 compliant</a></span></td>
     <td class="h5"><span class="tb">Documentation</span></td>
     <td class="h5"><span class="tb">L10N support</span></td>
     <td class="h5"><span class="tb">Front-end admin</span></td>
     <td class="h5"><span class="tb">WordPress plugin</span></td>
+    <td class="h5"><span class="tb">Unit testing / CI</span></td>
   </tr>
   <tr>
-    <td class="h1" rowspan="25"><span class="tb">Packages (CIDRAM, CIDRAM-L, phpMussel, SFS Mass IP Checker, ZB Block)</span></td>
+    <td class="h1l" rowspan="25"><span class="tb">Packages (CIDRAM, CIDRAM-L, phpMussel, SFS Mass IP Checker, ZB Block)</span></td>
     <td class="h2"><span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v0.5.0">CIDRAM 0.5.0</a> <small>(2016.08.24)</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
     <td class="h2"><span class="xr">❌</span></td>
     <td class="h2"><span class="xr">❌</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
@@ -97,12 +98,13 @@
     <td class="h5"><span class="xg">✔️</span></td>
     <td class="h5"><span class="xr">❌</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
+    <td class="h5"><span class="xr">❌</span></td>
   </tr>
   <tr>
     <td class="h2"><span class="xr">✱</span> CIDRAM-L 0.5.0 <small>(2016.08.24)</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
@@ -114,6 +116,7 @@
     <td class="h5"><span class="xr">❌</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
+    <td class="h5"><span class="xr">❌</span></td>
     <td class="h5"><span class="xr">❌</span></td>
     <td class="h5"><span class="xr">❌</span></td>
     <td class="h5"><span class="xr">❌</span></td>
@@ -121,9 +124,9 @@
   </tr>
   <tr>
     <td class="h2"><span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v0.5.1">CIDRAM 0.5.1</a> <small>(2016.10.01)</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
     <td class="h2"><span class="xr">❌</span></td>
     <td class="h2"><span class="xr">❌</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
@@ -139,12 +142,13 @@
     <td class="h5"><span class="xg">✔️</span></td>
     <td class="h5"><span class="xr">❌</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
+    <td class="h5"><span class="xr">❌</span></td>
   </tr>
   <tr>
     <td class="h2"><span class="xr">✱</span> CIDRAM-L 0.5.1 <small>(2016.10.01)</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
@@ -156,6 +160,7 @@
     <td class="h5"><span class="xr">❌</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
+    <td class="h5"><span class="xr">❌</span></td>
     <td class="h5"><span class="xr">❌</span></td>
     <td class="h5"><span class="xr">❌</span></td>
     <td class="h5"><span class="xr">❌</span></td>
@@ -163,9 +168,9 @@
   </tr>
   <tr>
     <td class="h2"><span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v0.6.0">CIDRAM 0.6.0</a> <small>(2016.12.02)</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
     <td class="h2"><span class="xr">❌</span></td>
     <td class="h2"><span class="xr">❌</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
@@ -181,12 +186,13 @@
     <td class="h5"><span class="xg">✔️</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
+    <td class="h5"><span class="xr">❌</span></td>
   </tr>
   <tr>
     <td class="h2"><span class="xr">✱</span> CIDRAM-L 0.6.0 <small>(2016.12.02)</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
@@ -198,6 +204,7 @@
     <td class="h5"><span class="xr">❌</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
+    <td class="h5"><span class="xr">❌</span></td>
     <td class="h5"><span class="xr">❌</span></td>
     <td class="h5"><span class="xr">❌</span></td>
     <td class="h5"><span class="xr">❌</span></td>
@@ -205,9 +212,9 @@
   </tr>
   <tr>
     <td class="h2"><span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v0.6.1">CIDRAM 0.6.1</a> <small>(2016.12.12)</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
     <td class="h2"><span class="xr">❌</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
@@ -223,12 +230,13 @@
     <td class="h5"><span class="xg">✔️</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
+    <td class="h5"><span class="xr">❌</span></td>
   </tr>
   <tr>
     <td class="h2"><span class="xr">✱</span> CIDRAM-L 0.6.1 <small>(2016.12.12)</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
@@ -240,6 +248,7 @@
     <td class="h5"><span class="xr">❌</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
+    <td class="h5"><span class="xr">❌</span></td>
     <td class="h5"><span class="xr">❌</span></td>
     <td class="h5"><span class="xr">❌</span></td>
     <td class="h5"><span class="xr">❌</span></td>
@@ -247,9 +256,9 @@
   </tr>
   <tr>
     <td class="h2"><span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v0.7.0">CIDRAM 0.7.0</a> <small>(2017.02.01)</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
     <td class="h2"><span class="xr">❌</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
@@ -265,12 +274,13 @@
     <td class="h5"><span class="xg">✔️</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
+    <td class="h5"><span class="xr">❌</span></td>
   </tr>
   <tr>
     <td class="h2"><span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v0.8.0">CIDRAM 0.8.0</a> <small>(2017.02.28)</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
     <td class="h2"><span class="xr">❌</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
@@ -286,12 +296,13 @@
     <td class="h5"><span class="xg">✔️</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
+    <td class="h5"><span class="xr">❌</span></td>
   </tr>
   <tr>
     <td class="h2"><span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v0.9.0">CIDRAM 0.9.0</a> <small>(2017.04.07)</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
     <td class="h2"><span class="xr">❌</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
@@ -307,12 +318,13 @@
     <td class="h5"><span class="xg">✔️</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
+    <td class="h5"><span class="xr">❌</span></td>
   </tr>
   <tr>
     <td class="h1"><span class="xg">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.0.0">CIDRAM 1.0.0</a> <small>(2017.05.31)</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
     <td class="h2"><span class="xr">❌</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
@@ -322,6 +334,7 @@
     <td class="h2"><span class="xo">✔️</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
     <td class="h5"><span class="xr">❌</span></td>
+    <td class="h5"><span class="xg">✔️</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
@@ -331,9 +344,9 @@
   </tr>
   <tr>
     <td class="h2"><span class="xb">✱</span> CIDRAM 1.0.1 <small>(T.B.A.)</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
     <td class="h2"><span class="xr">❌</span></td>
     <td class="h2"><span class="xo">✔️</span></td>
     <td class="h2"><span class="xo">✔️</span></td>
@@ -343,6 +356,7 @@
     <td class="h2"><span class="xo">✔️</span></td>
     <td class="h5"><span class="xo">✔️</span></td>
     <td class="h5"><span class="xr">❌</span></td>
+    <td class="h5"><span class="xo">✔️</span></td>
     <td class="h5"><span class="xo">✔️</span></td>
     <td class="h5"><span class="xo">✔️</span></td>
     <td class="h5"><span class="xo">✔️</span></td>
@@ -352,9 +366,9 @@
   </tr>
   <tr>
     <td class="h2"><span class="xb">✱</span> CIDRAM 1.1.0 <small>(T.B.A.)</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
     <td class="h2"><span class="xr">❌</span></td>
     <td class="h2"><span class="xo">✔️</span></td>
     <td class="h2"><span class="xo">✔️</span></td>
@@ -364,6 +378,7 @@
     <td class="h2"><span class="xo">✔️</span></td>
     <td class="h5"><span class="xo">✔️</span></td>
     <td class="h5"><span class="xr">❌</span></td>
+    <td class="h5"><span class="xo">✔️</span></td>
     <td class="h5"><span class="xo">✔️</span></td>
     <td class="h5"><span class="xo">✔️</span></td>
     <td class="h5"><span class="xo">✔️</span></td>
@@ -373,9 +388,9 @@
   </tr>
   <tr>
     <td class="h2"><span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v0.9.0">phpMussel 0.9.0</a> <small>(2015.11.30)</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
     <td class="h2"><span class="xr">❌</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
@@ -389,14 +404,15 @@
     <td class="h5"><span class="xr">❌</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
+    <td class="h5"><span class="xr">❌</span></td>
     <td class="h5"><span class="xr">❌</span></td>
     <td class="h5"><span class="xr">❌</span></td>
   </tr>
   <tr>
     <td class="h2"><span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v0.9.1">phpMussel 0.9.1</a> <small>(2015.12.30)</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
     <td class="h2"><span class="xr">❌</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
@@ -410,14 +426,15 @@
     <td class="h5"><span class="xr">❌</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
+    <td class="h5"><span class="xr">❌</span></td>
     <td class="h5"><span class="xr">❌</span></td>
     <td class="h5"><span class="xr">❌</span></td>
   </tr>
   <tr>
     <td class="h1"><span class="xg">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v0.10.0">phpMussel 0.10.0</a> <small>(2016.02.27)</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
     <td class="h2"><span class="xr">❌</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
@@ -431,14 +448,15 @@
     <td class="h5"><span class="xg">✔️</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
     <td class="h5"><span class="xg">✔️</span></td>
+    <td class="h5"><span class="xr">❌</span></td>
     <td class="h5"><span class="xr">❌</span></td>
     <td class="h5"><span class="xr">❌</span></td>
   </tr>
   <tr>
     <td class="h2"><span class="xb">✱</span> phpMussel 1.0.0 <small>(T.B.A.)</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
     <td class="h2"><span class="xr">❌</span></td>
     <td class="h2"><span class="xo">✔️</span></td>
     <td class="h2"><span class="xo">✔️</span></td>
@@ -454,12 +472,13 @@
     <td class="h5"><span class="xo">✔️</span></td>
     <td class="h5"><span class="xo">✔️</span></td>
     <td class="h5"><span class="xb">❓</span></td>
+    <td class="h5"><span class="xo">✔️</span></td>
   </tr>
   <tr>
     <td class="h2"><span class="xb">✱</span> phpMussel 1.1.0 <small>(T.B.A.)</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
     <td class="h2"><span class="xr">❌</span></td>
     <td class="h2"><span class="xo">✔️</span></td>
     <td class="h2"><span class="xo">✔️</span></td>
@@ -475,6 +494,7 @@
     <td class="h5"><span class="xo">✔️</span></td>
     <td class="h5"><span class="xo">✔️</span></td>
     <td class="h5"><span class="xb">❓</span></td>
+    <td class="h5"><span class="xo">✔️</span></td>
   </tr>
   <tr>
     <td class="h4"><span class="xr">✱</span> SFS Mass IP Checker 0.1.0 <small>(2016.01.08)</small></td>
@@ -496,6 +516,7 @@
     <td class="h4"><span class="xr">✔️</span></td>
     <td class="h4"><span class="xr">➖</span></td>
     <td class="h4"><span class="xr">➖</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
   </tr>
   <tr>
     <td class="h4"><span class="xr">✱</span> SFS Mass IP Checker 0.1.1 <small>(2016.02.05)</small></td>
@@ -517,12 +538,13 @@
     <td class="h4"><span class="xr">✔️</span></td>
     <td class="h4"><span class="xr">➖</span></td>
     <td class="h4"><span class="xr">➖</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
   </tr>
   <tr>
     <td class="h2"><span class="xr">✱</span> <a href="https://github.com/Maikuolan/SFS-Mass-IP-Checker/releases/tag/v0.1.2">SFS Mass IP Checker 0.1.2</a> <small>(2016.09.08)</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span>¹</td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span>¹</td>
     <td class="h2"><span class="xg">✔️</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
@@ -538,12 +560,13 @@
     <td class="h5"><span class="xg">✔️</span></td>
     <td class="h5"><span class="xb">➖</span></td>
     <td class="h5"><span class="xb">➖</span></td>
+    <td class="h5"><span class="xr">❌</span></td>
   </tr>
   <tr>
     <td class="h1"><span class="xg">✱</span> <a href="https://github.com/Maikuolan/SFS-Mass-IP-Checker/releases/tag/v0.1.3">SFS Mass IP Checker 0.1.3</a> <small>(2016.09.10)</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span>¹</td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span>¹</td>
     <td class="h2"><span class="xg">✔️</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
@@ -559,12 +582,13 @@
     <td class="h5"><span class="xg">✔️</span></td>
     <td class="h5"><span class="xb">➖</span></td>
     <td class="h5"><span class="xb">➖</span></td>
+    <td class="h5"><span class="xr">❌</span></td>
   </tr>
   <tr>
     <td class="h2"><span class="xb">✱</span> SFS Mass IP Checker 0.2.0 <small>(T.B.A.)</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span>¹</td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span></td>
+    <td class="h4"><span class="xr">❌</span>¹</td>
     <td class="h2"><span class="xo">✔️</span></td>
     <td class="h2"><span class="xo">✔️</span></td>
     <td class="h2"><span class="xo">✔️</span></td>
@@ -580,12 +604,13 @@
     <td class="h5"><span class="xo">✔️</span></td>
     <td class="h5"><span class="xb">➖</span></td>
     <td class="h5"><span class="xb">➖</span></td>
+    <td class="h5"><span class="xb">❓</span></td>
   </tr>
   <tr>
     <td class="h2"><span class="xg">✱</span> <a href="http://www.spambotsecurity.com/zbblock_download.php">ZB Block 0.4.10a3</a> <small>(2013.01.19)</small></td>
-    <td class="h2"><span class="xo">✔️</span></td>
-    <td class="h2"><span class="xo">✔️</span></td>
-    <td class="h2"><span class="xg">✔️</span></td>
+    <td class="h4"><span class="xr">✔️</span></td>
+    <td class="h4"><span class="xr">✔️</span></td>
+    <td class="h4"><span class="xr">✔️</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
     <td class="h2"><span class="xg">✔️</span></td>
@@ -601,6 +626,7 @@
     <td class="h5"><span class="xr">❌</span></td>
     <td class="h5"><span class="xr">❌</span></td>
     <td class="h5"><span class="xr">❌</span></td>
+    <td class="h5"><span class="xr">❌</span></td>
   </tr>
 </table>
 
@@ -609,7 +635,7 @@
 <table>
   <tr>
     <td colspan="2"></td>
-    <td class="h1" colspan="5">phpMussel versions</td>
+    <td class="h1t" colspan="5">phpMussel versions</td>
   </tr>
   <tr>
     <td colspan="2"></td>
@@ -620,7 +646,7 @@
     <td class="h2"><span class="tb"><span class="xb">✱</span> 1.1.0 <small>(T.B.A.)</small></span></td>
   </tr>
   <tr>
-    <td class="h1" rowspan="7"><span class="tb">phpMussel plugins</span></td>
+    <td class="h1l" rowspan="7"><span class="tb">phpMussel plugins</span></td>
     <td class="h2"><span class="xg">✱</span> <a href="https://github.com/phpMussel/plugin-legacy/releases/tag/v1.0.1">Legacy 1.0.1</a> <small>(2016.05.29)</small></td>
     <td class="h2"><span class="xr">❌</span></td>
     <td class="h2"><span class="xr">❌</span></td>

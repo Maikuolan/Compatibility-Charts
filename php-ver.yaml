@@ -1,0 +1,36 @@
+Updated: "2017.07.29"
+Stable: "7.1.7"
+Unstable: "7.2.0-BETA1"
+Default: "php71"
+Branch:
+ php50:
+  Latest: "5.0.5"
+  WarnMin: "*"
+ php51:
+  Latest: "5.1.6"
+  WarnMin: "*"
+ php52:
+  Latest: "5.2.17"
+  WarnMin: "*"
+ php53:
+  Latest: "5.3.29"
+  WarnMin: "*"
+ php54:
+  Latest: "5.4.45"
+  WarnMin: "5.4.43"
+ php55:
+  Latest: "5.5.38"
+  WarnMin: "5.5.32"
+ php56:
+  Latest: "5.6.31"
+  WarnMin: "5.6.18"
+ php70:
+  Latest: "7.0.21"
+  WarnMin: "7.0.3"
+ php71:
+  Latest: "7.1.7"
+  WarnMin: "7.0.0"
+ php72:
+  Latest: "7.2.0-BETA1"
+  WarnMin: "7.2.0-BETA1"
+

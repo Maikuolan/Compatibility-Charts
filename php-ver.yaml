@@ -1,6 +1,6 @@
-Updated: "2017.08.04"
+Updated: "2017.08.17"
 Stable: "7.1.8"
-Unstable: "7.2.0-BETA2"
+Unstable: "7.2.0-BETA3"
 Branch:
  php50:
   Latest: "5.0.5"
@@ -30,6 +30,6 @@ Branch:
   Latest: "7.1.8"
   WarnMin: "7.0.0"
  php72:
-  Latest: "7.2.0-BETA2"
+  Latest: "7.2.0-BETA3"
   WarnMin: "7.2.0-BETA1"
 

@@ -1,6 +1,6 @@
-Updated: "2017.10.07"
+Updated: "2017.10.13"
 Stable: "7.1.10"
-Unstable: "7.2.0RC3"
+Unstable: "7.2.0RC4"
 Branch:
  php50:
   Latest: "5.0.5"
@@ -27,9 +27,9 @@ Branch:
   Latest: "7.0.24"
   WarnMin: "7.0.17"
  php71:
-  Latest: "7.1.9"
+  Latest: "7.1.10"
   WarnMin: "7.1.3"
  php72:
-  Latest: "7.2.0RC3"
-  WarnMin: "7.2.0RC3"
+  Latest: "7.2.0RC4"
+  WarnMin: "7.2.0RC4"
 

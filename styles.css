@@ -17,11 +17,12 @@ a:hover{color:#46f}
 .h1,.h1t,.h1l,.h1l2,.h2,.h3,.h4,.h5,.h5l{margin:0;padding:4px;border-width:1px;border-color:#999}
 .h1,.h1t,.h1l,.h1l2{background-color:#eee}
 .h2,.h2l{background-color:#ddd}
-.h3,.h3l{background-color:#cfc}
-.h4,.h4l{background-color:#fcc}
+.h3{background-color:#cfc}
+.h4{background-color:#fcc}
 .h5,.h5l{background-color:#eec}
 td{margin:auto;padding:auto}
 .tb{writing-mode:tb;white-space:nowrap}
 .xg{color:green}
 .xb{color:#00f}
 .xo{color:#f80}
+.compatsafe{display:none}

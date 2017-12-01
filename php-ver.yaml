@@ -31,5 +31,5 @@ Branch:
   WarnMin: "7.1.11"
  php72:
   Latest: "7.2.0"
-  WarnMin: "7.2.0"
+  WarnMin: "0"
 

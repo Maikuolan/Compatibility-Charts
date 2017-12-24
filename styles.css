@@ -20,7 +20,7 @@ a:hover{color:#46f}
 .h3{background-color:#cfc}
 .h4{background-color:#fcc}
 .h5,.h5l{background-color:#eec}
-td{margin:auto;padding:auto}
+td{margin:auto;padding:auto;min-width:30px}
 .tb{writing-mode:tb;white-space:nowrap}
 .xg{color:green}
 .xb{color:#00f}

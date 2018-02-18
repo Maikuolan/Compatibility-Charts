@@ -11,12 +11,12 @@ a:hover{color:#46f}
 .center,.co,body,td{text-align:center}
 .co{padding:12}
 .h1,.h2,.h3,.h4,.h5{border-style:solid solid none none}
-.h1t{border-style:solid solid none solid}
+.h1t,.h2t{border-style:solid solid none solid}
 .h1l,.h5l{border-style:solid dotted solid solid}
 .h1l2{border-style:solid dotted none solid}
-.h1,.h1t,.h1l,.h1l2,.h2,.h3,.h4,.h5,.h5l{margin:0;padding:4px;border-width:1px;border-color:#999}
+.h1,.h1t,.h2t,.h1l,.h1l2,.h2,.h3,.h4,.h5,.h5l{margin:0;padding:4px;border-width:1px;border-color:#999}
 .h1,.h1t,.h1l,.h1l2{background-color:#eee}
-.h2,.h2l{background-color:#ddd}
+.h2,.h2l,.h2t{background-color:#ddd}
 .h3{background-color:#cfc}
 .h4{background-color:#fcc}
 .h5,.h5l{background-color:#eec}

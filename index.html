@@ -11,31 +11,36 @@
 <hr />
 
 <h1>Compatibility Charts</h1>
-<p><em>Last modified: <time datetime="2018-08-17">2018.08.17</time></em></p>
 
-<p>
-  <span class="xr h2l">❌</span> Isn't and/or won't be compatible/available<span class="compatsafe">/safe</span>.<br />
-  <span class="xb h2l"><small>❌NR</small></span> Assumed to be incompatible/unavailable<span class="compatsafe">/unsafe</span>, but hasn't been released and can't be tested.<br />
+<p><strong>
+  <span class="xr h2l">❌</span> <small>Not compatible/available.</small><br />
   <br />
-  <span class="xg h2l">✔️</span> Compatible+Available<span class="compatsafe">+Safe</span> (fully tested, manually + with CI).<br />
-  <span class="xg h2l"><small>✔️MT</small></span> Compatible+Available<span class="compatsafe">+Safe</span> (manually tested only; no CI/unit testing).<br />
-  <span class="xg h2l"><small>✔️UT</small></span> Compatible+Available<span class="compatsafe">+Safe</span> (CI/unit tested only; no manual testing).<br />
-  <span class="xo h2l"><small>✔️NT</small></span> Assumed to be compatible+available<span class="compatsafe">+safe</span>, but not tested.<br />
-  <span class="xb h2l"><small>✔️NR</small></span> Assumed to be compatible+available<span class="compatsafe">+safe</span>, but hasn't been released and can't be tested.<br />
-  <small class="h2l">+A</small> Tested against unstable/alpha releases only (not yet tested against stable releases).<br />
-  <small class="h2l">+SO</small> Sub-optimal performance compared to other versions in some, specific contexts, or some certain peripheral, non-essential features unavailable/incompatible.<br />
+  <span class="xg h2l">✔️</span> <small>Compatible+Available (fully tested, manually + with CI).</small><br />
+  <small><span class="xg h2l">✔️MT</span> Compatible+Available (manually tested only; no CI/unit testing).</small><br />
+  <small><span class="xg h2l">✔️UT</span> Compatible+Available (CI/unit tested only; no manual testing).</small><br />
+  <small><span class="xo h2l">✔️NT</span> Assumed to be compatible+available, but not tested.</small><br />
+  <small><span class="h2l">+A</span> Tested against unstable/alpha/beta releases only.</small><br />
+  <small><span class="h2l">+SO</span> Sub-optimal performance/compatibility (there may be problems in some contexts; not recommended).</small><br />
   <br />
-  <span class="xr h2l">➖</span> Not supported and/or not relevant.<br />
+  <span class="xr h2l">➖</span> <small>Not supported and/or not relevant.</small><br />
+  <small><span class="xo h2l">➖NT</span> Not tested + not enough information to determine compatibility.</small><br />
   <br />
-  <span class="xg">✱ <strong>Current/Latest versions.</strong></span><br />
-  <span class="xo h2l">✱</span> Outdated versions (dev support provided).<br />
-  <span class="xr h2l">✱</span> Outdated versions (dev support <strong>not</strong> provided + <strong>please update ASAP</strong>).<br />
-  <span class="xb h2l">✱</span> Future versions (planned + not yet released).<br />
-  <span class="xp h2l"><small>❌</small></span> Recently skipped versions (i.e., code may exist and may be in use, but version was never tagged/released).<br />
+  <span class="xg">✱ <small>Current/Latest version on this branch (or current latest branch).</small></span><br />
+  <span class="xo h2l">✱</span> <small>Outdated versions/branches (dev support provided).</small><br />
+  <span class="xr h2l">✱</span> <small>Outdated or EoL versions/branches (dev support <u>not</u> provided + <u>please update ASAP</u>).</small><br />
+  <span class="xb h2l">✱</span> <small>Future versions/branches (planned + not yet released, or still alpha/beta currently).</small><br />
   <br />
-  <strong>📝<sub>1</sub></strong> This version/release significantly breaks backwards-compatibility with previous versions/releases.<br />
-  <strong>📝<sub>2</sub></strong> This version/release marks an end to continued dev support of all previous versions/releases.<br />
-</p>
+  <strong>📝<sub>1</sub></strong> <small>This version/release <strong><u>significantly breaks backwards-compatibility</u></strong> with previous versions/releases.</small><br />
+  <strong>📝<sub>2</sub></strong> <small>This version/release marks an end to continued dev support of all previous versions/releases.</small><br />
+  <strong>📝<sub>3</sub></strong> <small>Previous versions/releases could be vulnerable and are not recommended for use anymore.</small><br />
+  <br />
+  See also:<br />
+  <small>
+    <a href="https://maikuolan.github.io/Vulnerability-Charts/php.html">Vulnerability Charts</a><br />
+    <a href="https://www.cvedetails.com/vendor/74/PHP.html">PHP CVEs</a><br />
+    <a href="https://php.net/releases/">PHP releases</a>
+  </small>
+</strong></p><hr />
 
 <p><em>
   Only relevant information will be listed here. Information will be delisted when no longer relevant. Generally,
@@ -48,31 +53,16 @@
   this page.<br />
   <br />
   Licensing (for this repository): <a href="https://github.com/Maikuolan/Compatibility-Charts/blob/gh-pages/LICENSE.txt">MIT License</a> (feel free to copy and adapt it if you want).
-</em></p>
+</em></p><hr />
 
-<hr />
-
-<script type="text/javascript">function show(e){b=document.getElementsByClassName(e);for(var s=0;s<b.length;s++)b[s].style.display="inline"}function hide(e){b=document.getElementsByClassName(e);for(var s=0;s<b.length;s++)b[s].style.display="none"}</script>
+<p><em>Last modified: <time datetime="2018-09-25">2018.09.25</time></em></p><hr />
 
 <table>
   <tr>
     <td colspan="2" rowspan="2">
-        <small>Currently showing version pairs on the basis of:</small><br />
-        <span class="compatonly">Compatible Only</span>
-        <span class="compatsafe">Compatible + Safety</span><br />
-        <br />
-        <small>Click to show version pairs on the basis of:</small><br />
-        <a href="javascript:void()" onclick="javascript:hide('compatsafe');show('compatonly')" class="compatsafe">Compatible Only</a>
-        <a href="javascript:void()" onclick="javascript:hide('compatonly');show('compatsafe')" class="compatonly">Compatible + Safety</a><br />
-        <br />
-        <small>See also:<br />
-        <a href="https://maikuolan.github.io/Vulnerability-Charts/php.html">Vulnerability Charts</a><br />
-        <a href="https://www.cvedetails.com/vendor/74/PHP.html">PHP CVEs</a><br />
-        <a href="https://php.net/releases/">PHP releases</a>
-        </small>
     </td>
     <td class="h1t" colspan="10"><a href="https://secure.php.net/supported-versions.php">PHP versions</a><br /><small>(Sub-minor and patch releases combined; Dates reflect initial releases)</small></td>
-    <td class="h1" colspan="2">Other</td>
+    <td class="h1">Other</td>
   </tr>
   <tr>
     <td class="h2 v53"><span class="tb xr">✱ PHP 5.3 <small>(2009.06.30)</small></span></td>
@@ -83,60 +73,37 @@
     <td class="h2 v71"><span class="tb xo">✱ PHP 7.1 <small>(2016.12.01)</small></span></td>
     <td class="h1 v72"><span class="tb xg">✱ PHP 7.2 <small>(2017.11.30)</small></span></td>
     <td class="h2 v73"><span class="tb xb">✱ PHP 7.3 <small>(2018.11.29)</small></span></td>
-    <td class="h2 v80"><span class="tb xb">✱ PHP 8.0 <small>(T.B.A.)</small></span></td>
+    <td class="h2 v74"><span class="tb xb">✱ PHP 7.4 <small>(T.B.A.)</small></span></td>
     <td class="h5">
-        <span class="tb">
-            Version Ranges<br />
-            <small>(Compatible<span class="compatsafe">+Safe</span>)</small>
-        </span>
+      <span class="tb">Version Ranges</span>
     </td>
     <td class="h1"><span class="tb">
-        <span class="xg">✱ Cronable 1.1.0 <small>(2018.01.20)</small><br />
-        <span class="xo">✱ Cronable 1.0.0 <small>(2017.10.29)</small><br />
+      <span class="xg">✱ Cronable 1.2.0 <small>(2018.09.10)</small><br />
+      <span class="xo">✱ Cronable 1.1.0 <small>(2018.01.20)</small><br />
+      <span class="xo">✱ Cronable 1.0.0 <small>(2017.10.29)</small><br />
     </span></td>
-    <td class="h2"><span class="tb xr">➖ HHVM <small>(all versions)</small></span></td>
   </tr>
   <tr>
-    <td class="h1l2" rowspan="11"><span class="tb"><a href="https://cidram.github.io/">CIDRAM</a></span></td>
-    <td class="h2"><span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v0.7.0">CIDRAM 0.7.0</a> <small>(2017.02.01)</small></td>
-    <td class="h2 v53" rowspan="5"><span class="xr">❌</span></td>
-    <td class="h2 v54" rowspan="2"><small class="xg compatonly">✔️MT+SO</small><span class="xr compatsafe">❌</span></td>
-    <td class="h2 v55" rowspan="2"><small class="xg compatonly">✔️MT+SO</small><span class="xr compatsafe">❌</span></td>
-    <td class="h2 v56" rowspan="2"><small class="xg">✔️MT+SO</small></td>
-    <td class="h2 v70" rowspan="2"><small class="xg">✔️MT</small></td>
-    <td class="h2 v71" rowspan="2"><small class="xg">✔️MT</small></td>
-    <td class="h2 v72"><span class="xr">❌</span></td>
-    <td class="h2 v73"><span class="xr">❌</span></td>
-    <td class="h2 v80"><span class="xr">❌</span></td>
-    <td class="h5"><small><span class="compatonly xo">&gt;= 5.4.0 &lt; 7.2.0 (MT)</span><span class="compatsafe"><span class="xo">~ 5.6.&gt;=36 (MT)</span> | <span class="xo">~ 7.0.&gt;=30 (MT)</span> | <span class="xo">~ 7.1.&gt;=17 (MT)</span></span></small></td>
-    <td class="h2" rowspan="4"><span class="xr">❌</span></td>
-    <td class="h2" rowspan="5"><span class="xr">➖</span></td>
-  </tr>
-  <tr>
-    <td class="h2">
-        <span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v0.8.0">CIDRAM 0.8.0</a> <small>(2017.02.28)</small><br />
-        <span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v0.9.0">CIDRAM 0.9.0</a> <small>(2017.04.07)</small><br />
-    </td>
-    <td class="h2 v72" rowspan="2"><small class="xo">✔️NT</small></td>
-    <td class="h2 v73" rowspan="4"><small class="xb">✔️NR</small></td>
-    <td class="h2 v80" rowspan="4"><small class="xb">✔️NR</small></td>
-    <td class="h5"><small><span class="compatonly xg">&gt;= 5.4.0 (MT)</span><span class="compatsafe"><span class="xo">~ 5.6.&gt;=36 (MT)</span> | <span class="xo">~ 7.0.&gt;=30 (MT)</span> | <span class="xo">~ 7.1.&gt;=17 (MT)</span> | <span class="xg">&gt;= 7.2.7 (NT)</span></span></small></td>
-  </tr>
-  <tr>
+    <td class="h1l2" rowspan="10"><span class="tb"><a name="CIDRAM" href="https://cidram.github.io/">CIDRAM</a></span></td>
     <td class="h2">
         <span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.0.0">CIDRAM 1.0.0</a> <small>(2017.05.31)</small><br />
         <span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.0.1">CIDRAM 1.0.1</a> <small>(2017.07.27)</small><br />
     </td>
-    <td class="h2 v54" rowspan="3"><small class="xg compatonly">✔️+SO</small><span class="xr compatsafe">❌</span></td>
-    <td class="h2 v55" rowspan="3"><small class="xg compatonly">✔️+SO</small><span class="xr compatsafe">❌</span></td>
-    <td class="h2 v56" rowspan="3"><small class="xg">✔️+SO</small></td>
-    <td class="h2 v70" rowspan="3"><span class="xg">✔️</span></td>
-    <td class="h2 v71" rowspan="3"><span class="xg">✔️</span></td>
-    <td class="h5" rowspan="3"><small><span class="compatonly xg">&gt;= 5.4.0</span><span class="compatsafe"><span class="xo">~ 5.6.&gt;=36</span> | <span class="xo">~ 7.0.&gt;=30</span> | <span class="xo">~ 7.1.&gt;=17</span> | <span class="xg">&gt;= 7.2.7 (NT)</span></span></small></td>
+    <td class="h2 v53" rowspan="4"><span class="xr">❌</span></td>
+    <td class="h2 v54" rowspan="4"><small class="xg">✔️+SO</small></td>
+    <td class="h2 v55" rowspan="4"><small class="xg">✔️+SO</small></td>
+    <td class="h2 v56" rowspan="4"><small class="xg">✔️+SO</small></td>
+    <td class="h2 v70" rowspan="4"><span class="xg">✔️</span></td>
+    <td class="h2 v71" rowspan="4"><span class="xg">✔️</span></td>
+    <td class="h2 v72"><small class="xo">✔️NT</small></td>
+    <td class="h2 v73" rowspan="3"><small class="xo">✔️NT</small></td>
+    <td class="h2 v74" rowspan="4"><span class="xr">❌</span></td>
+    <td class="h5" rowspan="4"><small class="xg">&gt;= 5.4.0 &lt; 7.4.0</small></td>
+    <td class="h2" rowspan="2"><span class="xr">❌</span></td>
   </tr>
   <tr>
     <td class="h2"><span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.1.0">CIDRAM 1.1.0</a> <small>(2017.08.20)</small></td>
-    <td class="h2 v72"><small class="xg">✔️MT</small></td>
+    <td class="h2 v72"><small class="xg">✔️MT+A</small></td>
   </tr>
   <tr>
     <td class="h2">
@@ -147,70 +114,67 @@
         <span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.5.0">CIDRAM 1.5.0</a> <small>(2018.04.10)</small><br />
         <span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.5.1">CIDRAM 1.5.1</a> <small>(2018.05.05)</small><br />
     </td>
-    <td class="h2 v72"><span class="xg">✔️</span></td>
-    <td class="h2"><small class="xg">✔️MT</small></td>
+    <td class="h2 v72" rowspan="2"><span class="xg">✔️</span></td>
+    <td class="h2" rowspan="2"><small class="xg">✔️MT</small></td>
+  </tr>
+  <tr>
+    <td class="h2">
+        📝<sub>2</sub> <span class="xo">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.6.0">CIDRAM 1.6.0</a> <small>(2018.05.25)</small><br />
+        <span class="xo">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.7.0">CIDRAM 1.7.0</a> <small>(2018.07.28)</small><br />
+    </td>
+    <td class="h2 v73"><small class="xg">✔️MT+A</small></td>
   </tr>
   <tr>
     <td class="h1">
-        📝<sub>2</sub> <span class="xo">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.6.0">CIDRAM 1.6.0</a> <small>(2018.05.25)</small><br />
-        <span class="xg">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.7.0">CIDRAM 1.7.0</a> <small>(2018.07.28)</small><br />
-        <span class="xb">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.8.0">CIDRAM 1.8.0</a> <small>(T.B.A.)</small><br />
+        <span class="xg">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.8.0">CIDRAM 1.8.0</a> <small>(2018.10.06)</small><br />
     </td>
     <td class="h2 v53"><span class="xr">❌</span></td>
-    <td class="h2 v54"><small class="xg compatonly">✔️+SO</small><span class="xr compatsafe">❌</span></td>
-    <td class="h2 v55"><small class="xg compatonly">✔️+SO</small><span class="xr compatsafe">❌</span></td>
+    <td class="h2 v54"><small class="xg">✔️+SO</small></td>
+    <td class="h2 v55"><small class="xg">✔️+SO</small></td>
     <td class="h2 v56"><small class="xg">✔️+SO</small></td>
     <td class="h2 v70"><span class="xg">✔️</span></td>
     <td class="h2 v71"><span class="xg">✔️</span></td>
     <td class="h1 v72"><span class="xg">✔️</span></td>
     <td class="h2 v73"><small class="xg">✔️MT+A</small></td>
-    <td class="h2 v80"><small class="xb">✔️NR</small></td>
-    <td class="h5"><small><span class="compatonly xg">&gt;= 5.4.0</span><span class="compatsafe"><span class="xo">~ 5.6.&gt;=36</span> | <span class="xo">~ 7.0.&gt;=30</span> | <span class="xo">~ 7.1.&gt;=17</span> | <span class="xg">&gt;= 7.2.7</span></span></small></td>
-    <td class="h2"><small class="xg">✔️MT</small></td>
-    <td class="h2"><span class="xr">➖</span></td>
+    <td class="h2 v74"><small class="xo">✔️NT</small></td>
+    <td class="h5"><small class="xg">&gt;= 5.4.0</small></td>
+    <td class="h1"><small class="xg">✔️MT</small></td>
   </tr>
-  <tr><td class="h2t" colspan="13"></td></tr>
+  <tr><td class="h2t" colspan="12"></td></tr>
   <tr>
     <td class="h2">
-        📝<sub>2</sub> <span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM-Extras/tree/master/cidram-l">CIDRAM-L 1.4.1</a> <small>(2018.02.17)</small><br />
-        <span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM-Extras/tree/master/cidram-l">CIDRAM-L 1.5.0</a> <small>(2018.03.15)</small><br />
-        <span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM-Extras/tree/master/cidram-l">CIDRAM-L 1.5.1</a> <small>(2018.05.05)</small><br />
-        📝<sub>2</sub> <span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM-Extras/tree/master/cidram-l">CIDRAM-L 1.6.0</a> <small>(2018.05.25)</small><br />
+        <span class="xr">✱</span> CIDRAM-L 1.7.0 <small>(2018.07.28)</small><br />
+        📝<sub>2</sub> <span class="xr">✱</span> CIDRAM-L 1.7.1 <small>(2018.08.17)</small><br />
     </td>
     <td class="h2 v53"><span class="xr">❌</span></td>
-    <td class="h2 v54"><small class="xg compatonly">✔️MT</small><span class="xr compatsafe">❌</span></td>
-    <td class="h2 v55"><small class="xg compatonly">✔️MT</small><span class="xr compatsafe">❌</span></td>
+    <td class="h2 v54"><small class="xg">✔️MT</small></td>
+    <td class="h2 v55"><small class="xg">✔️MT</small></td>
     <td class="h2 v56"><small class="xg">✔️MT</small></td>
     <td class="h2 v70"><small class="xg">✔️MT</small></td>
     <td class="h2 v71"><small class="xg">✔️MT</small></td>
     <td class="h2 v72"><small class="xg">✔️MT</small></td>
-    <td class="h2 v73"><small class="xb">✔️NR</small></td>
-    <td class="h2 v80"><small class="xb">✔️NR</small></td>
-    <td class="h5"><small><span class="compatonly xg">&gt;= 5.4.0 (MT)</span><span class="compatsafe"><span class="xo">~ 5.6.&gt;=36 (MT)</span> | <span class="xo">~ 7.0.&gt;=30 (MT)</span> | <span class="xo">~ 7.1.&gt;=17 (MT)</span> | <span class="xg">&gt;= 7.2.7 (MT)</span></span></small></td>
+    <td class="h2 v73"><small class="xg">✔️MT+A</small></td>
+    <td class="h2 v74"><span class="xr">❌</span></td>
+    <td class="h5"><small class="xg">&gt;= 5.4.0 (MT)</small></td>
     <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">➖</span></td>
   </tr>
   <tr>
     <td class="h1">
-        <span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM-Extras/tree/master/cidram-l">CIDRAM-L 1.6.1</a> <small>(2018.06.08)</small><br />
-        <span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM-Extras/tree/master/cidram-l">CIDRAM-L 1.7.0</a> <small>(2018.07.28)</small><br />
-        📝<sub>2</sub> <span class="xg">✱</span> <a href="https://github.com/CIDRAM/CIDRAM-Extras/tree/master/cidram-l">CIDRAM-L 1.7.1</a> <small>(2018.08.17)</small><br />
-        <span class="xb">✱</span> <a href="https://github.com/CIDRAM/CIDRAM-Extras/tree/master/cidram-l">CIDRAM-L 1.8.0</a> <small>(T.B.A.)</small><br />
+        📝<sub>2</sub> <span class="xg">✱</span> <a href="https://github.com/CIDRAM/CIDRAM-Extras/tree/master/cidram-l">CIDRAM-L 1.8.0</a> <small>(2018.09.25)</small><br />
     </td>
     <td class="h2 v53"><span class="xr">❌</span></td>
-    <td class="h2 v54"><small class="xg compatonly">✔️MT</small><span class="xr compatsafe">❌</span></td>
-    <td class="h2 v55"><small class="xg compatonly">✔️MT</small><span class="xr compatsafe">❌</span></td>
+    <td class="h2 v54"><small class="xg">✔️MT</small></td>
+    <td class="h2 v55"><small class="xg">✔️MT</small></td>
     <td class="h2 v56"><small class="xg">✔️MT</small></td>
     <td class="h2 v70"><small class="xg">✔️MT</small></td>
     <td class="h2 v71"><small class="xg">✔️MT</small></td>
     <td class="h1 v72"><small class="xg">✔️MT</small></td>
     <td class="h2 v73"><small class="xg">✔️MT+A</small></td>
-    <td class="h2 v80"><small class="xb">✔️NR</small></td>
-    <td class="h5"><small><span class="compatonly xg">&gt;= 5.4.0 (MT)</span><span class="compatsafe"><span class="xo">~ 5.6.&gt;=36 (MT)</span> | <span class="xo">~ 7.0.&gt;=30 (MT)</span> | <span class="xo">~ 7.1.&gt;=17 (MT)</span> | <span class="xg">&gt;= 7.2.7 (MT)</span></span></small></td>
+    <td class="h2 v74"><small class="xo">✔️NT</small></td>
+    <td class="h5"><small class="xg">&gt;= 5.4.0 (MT)</small></td>
     <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">➖</span></td>
   </tr>
-  <tr><td class="h2t" colspan="13"></td></tr>
+  <tr><td class="h2t" colspan="12"></td></tr>
   <tr>
     <td class="h1">
         <span class="xo">✱</span> <a href="https://github.com/CIDRAM/Aggregator/releases/tag/v1.0.0">Aggregator 1.0.0</a> <small>(2017.09.21)</small><br />
@@ -218,48 +182,47 @@
         <span class="xb">✱</span> <a href="https://github.com/CIDRAM/Aggregator/releases/tag/v1.1.1">Aggregator 1.1.1</a> <small>(T.B.A.)</small><br />
     </td>
     <td class="h2 v53"><span class="xr">❌</span></td>
-    <td class="h2 v54"><span class="xg compatonly">✔️</span><span class="xr compatsafe">❌</span></td>
-    <td class="h2 v55"><span class="xg compatonly">✔️</span><span class="xr compatsafe">❌</span></td>
+    <td class="h2 v54"><span class="xg">✔️</span></td>
+    <td class="h2 v55"><span class="xg">✔️</span></td>
     <td class="h2 v56"><span class="xg">✔️</span></td>
     <td class="h2 v70"><span class="xg">✔️</span></td>
     <td class="h2 v71"><span class="xg">✔️</span></td>
     <td class="h1 v72"><span class="xg">✔️</span></td>
     <td class="h2 v73"><small class="xg">✔️MT+A</small></td>
-    <td class="h2 v80"><small class="xb">✔️NR</small></td>
-    <td class="h5"><small><span class="compatonly xg">&gt;= 5.4.0</span><span class="compatsafe"><span class="xo">~ 5.6.&gt;=36</span> | <span class="xo">~ 7.0.&gt;=30</span> | <span class="xo">~ 7.1.&gt;=17</span> | <span class="xg">&gt;= 7.2.7</span></span></small></td>
+    <td class="h2 v74"><small class="xo">✔️NT</small></td>
+    <td class="h5"><small class="xg">&gt;= 5.4.0</small></td>
     <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">➖</span></td>
   </tr>
-  <tr><td class="h2t" colspan="14"></td></tr>
+  <tr><td class="h2t" colspan="13"></td></tr>
   <tr>
-    <td class="h1l2" rowspan="8"><span class="tb"><a href="https://phpmussel.github.io/">phpMussel</a></span></td>
+    <td class="h1l2" rowspan="9"><span class="tb"><a name="phpMussel" href="https://phpmussel.github.io/">phpMussel</a></span></td>
     <td class="h2"><span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v0.9.1">phpMussel 0.9.1</a> <small>(2015.12.30)</small></td>
-    <td class="h2 v53" rowspan="4"><span class="xr">❌</span></td>
-    <td class="h2 v54" rowspan="2"><small class="xg compatonly">✔️MT+SO</small><span class="xr compatsafe">❌</span></td>
-    <td class="h2 v55" rowspan="2"><small class="xg compatonly">✔️MT+SO</small><span class="xr compatsafe">❌</span></td>
+    <td class="h2 v53" rowspan="5"><span class="xr">❌</span></td>
+    <td class="h2 v54" rowspan="2"><small class="xg">✔️MT+SO</small></td>
+    <td class="h2 v55" rowspan="2"><small class="xg">✔️MT+SO</small></td>
     <td class="h2 v56" rowspan="2"><small class="xg">✔️MT+SO</small></td>
     <td class="h2 v70" rowspan="2"><small class="xg">✔️MT+SO</small></td>
     <td class="h2 v71"><small class="xo">✔️NT</small></td>
     <td class="h2 v72" rowspan="2"><small class="xo">✔️NT</small></td>
-    <td class="h2 v73" rowspan="4"><small class="xb">✔️NR</small></td>
-    <td class="h2 v80" rowspan="4"><small class="xb">✔️NR</small></td>
-    <td class="h5" rowspan="2"><small><span class="compatonly xg">&gt;= 5.4.0 (MT)</span><span class="compatsafe"><span class="xo">~ 5.6.&gt;=36 (MT)</span> | <span class="xo">~ 7.0.&gt;=30 (MT)</span> | <span class="xo">~ 7.1.&gt;=17 (NT)</span> | <span class="xg">&gt;= 7.2.7 (NT)</span></span></small></td>
+    <td class="h2 v73" rowspan="4"><small class="xo">✔️NT</small></td>
+    <td class="h2 v74" rowspan="2"><small class="xo">✔️NT</small></td>
+    <td class="h5" rowspan="2"><small class="xg">&gt;= 5.4.0 (MT)</small></td>
     <td class="h2" rowspan="3"><span class="xr">❌</span></td>
-    <td class="h2" rowspan="4"><span class="xr">➖</span></td>
   </tr>
   <tr>
     <td class="h2"><span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v0.10.0">phpMussel 0.10.0</a> <small>(2016.02.27)</small></td>
-    <td class="h2 v71"><small class="xg">✔️MT</small></td>
+    <td class="h2 v71"><small class="xg">✔️MT+A</small></td>
   </tr>
   <tr>
     <td class="h2">📝<sub>1</sub> <span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.0.0">phpMussel 1.0.0</a> <small>(2017.08.20)</small></td>
-    <td class="h2 v54" rowspan="2"><small class="xg compatonly">✔️+SO</small><span class="xr compatsafe">❌</span></td>
-    <td class="h2 v55" rowspan="2"><small class="xg compatonly">✔️+SO</small><span class="xr compatsafe">❌</span></td>
-    <td class="h2 v56" rowspan="2"><small class="xg">✔️+SO</small></td>
-    <td class="h2 v70" rowspan="2"><small class="xg">✔️+SO</small></td>
-    <td class="h2 v71" rowspan="2"><span class="xg">✔️</span></td>
-    <td class="h2 v72"><small class="xg">✔️MT</small></td>
-    <td class="h5" rowspan="2"><small><span class="compatonly xg">&gt;= 5.4.0</span><span class="compatsafe"><span class="xo">~ 5.6.&gt;=36</span> | <span class="xo">~ 7.0.&gt;=30</span> | <span class="xo">~ 7.1.&gt;=17</span> | <span class="xg">&gt;= 7.2.7 (MT)</span></span></small></td>
+    <td class="h2 v54" rowspan="3"><small class="xg">✔️+SO</small></td>
+    <td class="h2 v55" rowspan="3"><small class="xg">✔️+SO</small></td>
+    <td class="h2 v56" rowspan="3"><small class="xg">✔️+SO</small></td>
+    <td class="h2 v70" rowspan="3"><small class="xg">✔️+SO</small></td>
+    <td class="h2 v71" rowspan="3"><span class="xg">✔️</span></td>
+    <td class="h2 v72"><small class="xg">✔️MT+A</small></td>
+    <td class="h2 v74" rowspan="3"><span class="xr">❌</span></td>
+    <td class="h5" rowspan="3"><small class="xg">&gt;= 5.4.0 &lt; 7.4.0</small></td>
   </tr>
   <tr>
     <td class="h2">
@@ -268,29 +231,33 @@
         <span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.3.0">phpMussel 1.3.0</a> <small>(2018.04.12)</small><br />
         <span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.3.1">phpMussel 1.3.1</a> <small>(2018.04.25)</small><br />
     </td>
-    <td class="h2 v72"><span class="xg">✔️</span></td>
-    <td class="h2"><small class="xg">✔️MT</small></td>
+    <td class="h2 v72" rowspan="2"><span class="xg">✔️</span></td>
+    <td class="h2" rowspan="2"><small class="xg">✔️MT</small></td>
+  </tr>
+  <tr>
+    <td class="h2">
+        📝<sub>2</sub> <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.4.0">phpMussel 1.4.0</a> <small>(2018.05.25)</small><br />
+        <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.5.0">phpMussel 1.5.0</a> <small>(2018.08.01)</small><br />
+    </td>
+    <td class="h2 v73"><small class="xg">✔️MT+A</small></td>
   </tr>
   <tr>
     <td class="h1">
-        📝<sub>2</sub> <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.4.0">phpMussel 1.4.0</a> <small>(2018.05.25)</small><br />
-        <span class="xg">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.5.0">phpMussel 1.5.0</a> <small>(2018.08.01)</small><br />
-        <span class="xb">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.6.0">phpMussel 1.6.0</a> <small>(T.B.A.)</small><br />
+        📝<sub>3</sub> <span class="xg">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.6.0">phpMussel 1.6.0</a> <small>(2018.10.06)</small><br />
     </td>
     <td class="h2 v53"><span class="xr">❌</span></td>
-    <td class="h2 v54"><small class="xg compatonly">✔️+SO</small><span class="xr compatsafe">❌</span></td>
-    <td class="h2 v55"><small class="xg compatonly">✔️+SO</small><span class="xr compatsafe">❌</span></td>
+    <td class="h2 v54"><small class="xg">✔️+SO</small></td>
+    <td class="h2 v55"><small class="xg">✔️+SO</small></td>
     <td class="h2 v56"><small class="xg">✔️+SO</small></td>
     <td class="h2 v70"><small class="xg">✔️+SO</small></td>
     <td class="h2 v71"><span class="xg">✔️</span></td>
     <td class="h1 v72"><span class="xg">✔️</span></td>
     <td class="h2 v73"><small class="xg">✔️MT+A</small></td>
-    <td class="h2 v80"><small class="xb">✔️NR</small></td>
-    <td class="h5"><small><span class="compatonly xg">&gt;= 5.4.0</span><span class="compatsafe"><span class="xo">~ 5.6.&gt;=36</span> | <span class="xo">~ 7.0.&gt;=30</span> | <span class="xo">~ 7.1.&gt;=17</span> | <span class="xg">&gt;= 7.2.7</span></span></small></td>
-    <td class="h2"><small class="xg">✔️MT</small></td>
-    <td class="h2"><span class="xr">➖</span></td>
+    <td class="h2 v74"><small class="xo">✔️NT</small></td>
+    <td class="h5"><small class="xg">&gt;= 5.4.0</small></td>
+    <td class="h1"><small class="xg">✔️MT</small></td>
   </tr>
-  <tr><td class="h2t" colspan="13"></td></tr>
+  <tr><td class="h2t" colspan="12"></td></tr>
   <tr>
     <td class="h2"><span class="xo">✱</span> <a href="https://github.com/phpMussel/SigTool/releases/tag/v0.1.0">SigTool 0.1.0</a> <small>(2017.08.08)</small></td>
     <td class="h2 v53"><span class="xr">❌</span></td>
@@ -300,11 +267,10 @@
     <td class="h2 v70"><span class="xg">✔️</span></td>
     <td class="h2 v71"><span class="xg">✔️</span></td>
     <td class="h2 v72"><span class="xg">✔️</span></td>
-    <td class="h2 v73"><small class="xb">✔️NR</small></td>
-    <td class="h2 v80"><small class="xb">✔️NR</small></td>
-    <td class="h5"><small><span class="compatonly xg">&gt;= 7.0.0</span><span class="compatsafe"><span class="xo">~ 7.0.&gt;=30</span> | <span class="xo">~ 7.1.&gt;=17</span> | <span class="xg">&gt;= 7.2.7</span></span></small></td>
+    <td class="h2 v73"><small class="xo">✔️NT</small></td>
+    <td class="h2 v74"><small class="xo">✔️NT</small></td>
+    <td class="h5"><small class="xg">&gt;= 7.0.0</small></td>
     <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">➖</span></td>
   </tr>
   <tr>
     <td class="h1">
@@ -319,120 +285,144 @@
     <td class="h2 v71"><span class="xg">✔️</span></td>
     <td class="h1 v72"><span class="xg">✔️</span></td>
     <td class="h2 v73"><small class="xg">✔️MT+A</small></td>
-    <td class="h2 v80"><small class="xb">✔️NR</small></td>
-    <td class="h5"><small><span class="compatonly xg">&gt;= 7.0.0</span><span class="compatsafe"><span class="xo">~ 7.0.&gt;=30</span> | <span class="xo">~ 7.1.&gt;=17</span> | <span class="xg">&gt;= 7.2.7</span></span></small></td>
+    <td class="h2 v74"><small class="xo">✔️NT</small></td>
+    <td class="h5"><small class="xg">&gt;= 7.0.0</small></td>
     <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">➖</span></td>
   </tr>
-  <tr><td class="h2t" colspan="14"></td></tr>
+  <tr><td class="h2t" colspan="13"></td></tr>
   <tr>
-    <td class="h1l2" rowspan="2"><span class="tb"><a href="https://github.com/Maikuolan/SFS-Mass-IP-Checker" title="SFS Mass IP Checker">SFS M...r</a></span></td>
-    <td class="h1">📝<sub>2</sub> <span class="xg">✱</span> <a href="https://github.com/Maikuolan/SFS-Mass-IP-Checker/releases/tag/v0.1.3">SFS Mass IP Checker 0.1.3</a> <small>(2016.09.10)</small></td>
-    <td class="h2 v53"><small class="xg compatonly">✔️MT</small><span class="xr compatsafe">❌</span></td>
-    <td class="h2 v54"><small class="xg compatonly">✔️MT</small><span class="xr compatsafe">❌</span></td>
-    <td class="h2 v55"><small class="xg compatonly">✔️MT</small><span class="xr compatsafe">❌</span></td>
+    <td class="h1l2" rowspan="2"><span class="tb"><a name="SFS-Mass-IP-Checker" href="https://github.com/Maikuolan/SFS-Mass-IP-Checker" title="SFS Mass IP Checker">SFS M...r</a></span></td>
+    <td class="h2">
+        <span class="xr">✱</span> All versions &lt; 0.1.3<br />
+        <small>Subject to some significant bugs.<br />If using these, please update immediately.</small>
+    </td>
+    <td class="h2 v53"><small class="xg">✔️MT</small></td>
+    <td class="h2 v54"><small class="xg">✔️MT</small></td>
+    <td class="h2 v55"><small class="xg">✔️MT</small></td>
+    <td class="h2 v56"><small class="xg">✔️MT</small></td>
+    <td class="h2 v70"><small class="xg">✔️MT</small></td>
+    <td class="h2 v71"><small class="xg">✔️MT</small></td>
+    <td class="h2 v72"><small class="xg">✔️MT+A</small></td>
+    <td class="h2 v73"><small class="xo">✔️NT</small></td>
+    <td class="h2 v74"><small class="xo">✔️NT</small></td>
+    <td class="h5"><small class="xg">&gt;= 5.3.0 (MT)</small></td>
+    <td class="h2"><span class="xr">❌</span></td>
+  </tr>
+  <tr>
+    <td class="h1">
+        📝<sub>2</sub> <span class="xg">✱</span> <a href="https://github.com/Maikuolan/SFS-Mass-IP-Checker/releases/tag/v0.1.3">SFS Mass IP Checker 0.1.3</a> <small>(2016.09.10)</small><br />
+    </td>
+    <td class="h2 v53"><small class="xg">✔️MT</small></td>
+    <td class="h2 v54"><small class="xg">✔️MT</small></td>
+    <td class="h2 v55"><small class="xg">✔️MT</small></td>
     <td class="h2 v56"><small class="xg">✔️MT</small></td>
     <td class="h2 v70"><small class="xg">✔️MT</small></td>
     <td class="h2 v71"><small class="xg">✔️MT</small></td>
     <td class="h1 v72"><small class="xg">✔️MT</small></td>
     <td class="h2 v73"><small class="xg">✔️MT+A</small></td>
-    <td class="h2 v80"><small class="xb">✔️NR</small></td>
-    <td class="h5"><small><span class="compatonly xg">&gt;= 5.3.0 (MT)</span><span class="compatsafe"><span class="xo">~ 5.6.&gt;=36 (MT)</span> | <span class="xo">~ 7.0.&gt;=30 (MT)</span> | <span class="xo">~ 7.1.&gt;=17 (MT)</span> | <span class="xg">&gt;= 7.2.7 (NT)</span></span></small></td>
+    <td class="h2 v74"><small class="xo">✔️NT</small></td>
+    <td class="h5"><small class="xg">&gt;= 5.3.0 (MT)</small></td>
     <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">➖</span></td>
   </tr>
+  <tr><td class="h2t" colspan="13"></td></tr>
   <tr>
-    <td class="h2"><span class="xb">✱</span> SFS Mass IP Checker 0.2.0 <small>(T.B.A.)</small></td>
-    <td class="h2 v53"><span class="xb compatonly"><small>✔️NR</small></span><span class="xr compatsafe">❌</span></td>
-    <td class="h2 v54"><span class="xb compatonly"><small>✔️NR</small></span><span class="xr compatsafe">❌</span></td>
-    <td class="h2 v55"><span class="xb compatonly"><small>✔️NR</small></span><span class="xr compatsafe">❌</span></td>
-    <td class="h2 v56"><small class="xb">✔️NR</small></td>
-    <td class="h2 v70"><small class="xb">✔️NR</small></td>
-    <td class="h2 v71"><small class="xb">✔️NR</small></td>
-    <td class="h2 v72"><small class="xb">✔️NR</small></td>
-    <td class="h2 v73"><small class="xb">✔️NR</small></td>
-    <td class="h2 v80"><small class="xb">✔️NR</small></td>
-    <td class="h5"><small><span class="compatonly xb">&gt;= 5.3.0 (NR)</span><span class="compatsafe"><span class="xb">~ 5.6.&gt;=36 (NR)</span> | <span class="xb">~ 7.0.&gt;=30 (NR)</span> | <span class="xb">~ 7.1.&gt;=17 (NR)</span> | <span class="xb">&gt;= 7.2.7 (NR)</span></span></small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">➖</span></td>
-  </tr>
-  <tr><td class="h2t" colspan="14"></td></tr>
-  <tr>
-    <td class="h1l2" rowspan="4"><span class="tb"><a href="https://zb-block.net/">ZB Block</a></span></td>
+    <td class="h1l2" rowspan="6"><span class="tb"><a name="ZB-Block" href="https://zb-block.net/">ZB Block</a></span></td>
     <td class="h2">
-        <span class="xr">✱</span> <a href="http://www.spambotsecurity.com/zbblock_download.php">ZB Block 0.4.10a3</a> <small>(2013.01.19)</small><br />
+        <span class="xr">✱</span> <a href="https://zb-block.net/zbd/">ZB Block 0.4.10a3</a> <small>(2013.01.19)</small><br />
         <small>Versions &lt;= 0.4.10a3 released by Zaphod</small><br />
     </td>
-    <td class="h2 v53" rowspan="3"><small class="xg compatonly">✔️MT+SO</small><span class="xr compatsafe">❌</span></td>
-    <td class="h2 v54" rowspan="3"><span class="xg compatonly">✔️</span><span class="xr compatsafe">❌</span></td>
-    <td class="h2 v55" rowspan="3"><span class="xg compatonly">✔️</span><span class="xr compatsafe">❌</span></td>
-    <td class="h2 v56" rowspan="3"><span class="xg">✔️</span></td>
+    <td class="h2 v53" rowspan="3"><small class="xg">✔️MT+SO</small></td>
+    <td class="h2 v54" rowspan="5"><span class="xg">✔️</span></td>
+    <td class="h2 v55" rowspan="5"><span class="xg">✔️</span></td>
+    <td class="h2 v56" rowspan="5"><span class="xg">✔️</span></td>
     <td class="h2 v70"><span class="xr">❌</span></td>
     <td class="h2 v71"><span class="xr">❌</span></td>
     <td class="h2 v72"><span class="xr">❌</span></td>
     <td class="h2 v73"><span class="xr">❌</span></td>
-    <td class="h2 v80"><span class="xr">❌</span></td>
-    <td class="h5"><small class="compatonly xo">&gt;= 5.0.0 &lt; 7.0.0 (MT)</small><small class="compatsafe xo">~ 5.6.&gt;=36 (MT)</small></td>
-    <td class="h2" rowspan="3"><span class="xr">❌</span></td>
-    <td class="h2" rowspan="3"><span class="xr">➖</span></td>
+    <td class="h2 v74"><span class="xr">❌</span></td>
+    <td class="h5"><small class="xo">&gt;= 5.0.0 &lt; 7.0.0 (MT)</small></td>
+    <td class="h2" rowspan="5"><span class="xr">❌</span></td>
   </tr>
   <tr>
     <td class="h2">
-        📝<sub>2</sub> <span class="xr">✱</span> <a href="https://zb-block.net/zbf/showthread.php?t=6">ZB Block 0.4.20</a> <small>(2018.01.01)</small><br />
+        📝<sub>2</sub> <span class="xr">✱</span> ZB Block 0.4.20 <small>(2018.01.01)</small><br />
         <small>Versions &gt;= 0.4.20 released by JamesC</small><br />
-        <span class="xo">✱</span> <a href="https://zb-block.net/zbf/showthread.php?t=27">ZB Block 0.4.21</a> <small>(2018.02.01)</small><br />
+        <span class="xr">✱</span> <a href="https://zb-block.net/zbd/">ZB Block 0.4.21</a> <small>(2018.02.01)</small><br />
     </td>
-    <td class="h2 v70" rowspan="2"><span class="xg">✔️</span></td>
-    <td class="h2 v71" rowspan="2"><span class="xg">✔️</span></td>
-    <td class="h2 v72" rowspan="2"><span class="xg">✔️</span></td>
-    <td class="h2 v73" rowspan="2"><small class="xb">✔️NR</small></td>
-    <td class="h2 v80" rowspan="2"><small class="xb">✔️NR</small></td>
-    <td class="h5"><small><span class="compatonly xg">&gt;= 5.0.0</span><span class="compatsafe"><span class="xo">~ 5.6.&gt;=36</span> | <span class="xo">~ 7.0.&gt;=30</span> | <span class="xo">~ 7.1.&gt;=17</span> | <span class="xg">&gt;= 7.2.7</span></span></small></td>
+    <td class="h2 v70" rowspan="4"><span class="xg">✔️</span></td>
+    <td class="h2 v71" rowspan="4"><span class="xg">✔️</span></td>
+    <td class="h2 v72" rowspan="4"><span class="xg">✔️</span></td>
+    <td class="h2 v73" rowspan="4"><small class="xo">✔️NT</small></td>
+    <td class="h2 v74" rowspan="4"><small class="xo">✔️NT</small></td>
+    <td class="h5"><small class="xg">&gt;= 5.0.0</small></td>
   </tr>
   <tr>
     <td class="h2">
-        <span class="xr">✱</span> <a href="https://zb-block.net/zbf/showthread.php?t=28">ZB Block 0.5.0</a> <small>(2018.02.03)</small><br />
-        <span class="xr">✱</span> <a href="https://zb-block.net/zbf/showthread.php?t=63">ZB Block 0.5.1</a> <small>(2018.03.19)</small><br />
-        <span class="xo">✱</span> <a href="https://zb-block.net/zbf/showthread.php?t=73">ZB Block 0.5.2</a> <small>(2018.03.28)</small><br />
+        <span class="xr">✱</span> ZB Block 0.5.0 <small>(2018.02.03)</small><br />
+        <span class="xr">✱</span> ZB Block 0.5.1 <small>(2018.03.19)</small><br />
+        <span class="xr">✱</span> <a href="https://zb-block.net/zbd/">ZB Block 0.5.2</a> <small>(2018.03.28)</small><br />
     </td>
-    <td class="h5"><small><span class="compatonly xg">&gt;= 5.1.0</span><span class="compatsafe"><span class="xo">~ 5.6.&gt;=36</span> | <span class="xo">~ 7.0.&gt;=30</span> | <span class="xo">~ 7.1.&gt;=17</span> | <span class="xg">&gt;= 7.2.7</span></span></small></td>
+    <td class="h5" rowspan="2"><small class="xg">&gt;= 5.1.0</small></td>
   </tr>
   <tr>
-    <td class="h1">
-        <span class="xo">✱</span> <a href="https://zb-block.net/zbf/showthread.php?t=139">ZB Block 0.6.0</a> <small>(2018.05.22)</small><br />
-        <span class="xg">✱</span> <a href="https://zb-block.net/zbf/showthread.php?t=144">ZB Block 0.6.1</a> <small>(2018.05.28)</small><br />
+    <td class="h2">
+        <span class="xr">✱</span> ZB Block 0.6.0 <small>(2018.05.22)</small><br />
+        <span class="xr">✱</span> ZB Block 0.6.1 <small>(2018.05.28)</small><br />
     </td>
-    <td class="h2 v53"><small class="xo compatonly">✔️NT+SO</small><span class="xr compatsafe">❌</span></td>
-    <td class="h2 v54"><span class="xg compatonly">✔️</span><span class="xr compatsafe">❌</span></td>
-    <td class="h2 v55"><span class="xg compatonly">✔️</span><span class="xr compatsafe">❌</span></td>
-    <td class="h2 v56"><span class="xg">✔️</span></td>
-    <td class="h2 v70"><span class="xg">✔️</span></td>
-    <td class="h2 v71"><span class="xg">✔️</span></td>
-    <td class="h1 v72"><span class="xg">✔️</span></td>
-    <td class="h2 v73"><small class="xb">✔️NR</small></td>
-    <td class="h2 v80"><small class="xb">✔️NR</small></td>
-    <td class="h5"><small><span class="compatonly xg">&gt;= 5.1.0</span><span class="compatsafe"><span class="xo">~ 5.6.&gt;=36</span> | <span class="xo">~ 7.0.&gt;=30</span> | <span class="xo">~ 7.1.&gt;=17</span> | <span class="xg">&gt;= 7.2.7</span></span></small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">➖</span></td>
+    <td class="h2 v53"><small class="xo">✔️NT+SO</small></td>
   </tr>
-  <tr><td class="h2t" colspan="14"></td></tr>
   <tr>
-    <td class="h1l" rowspan="1"><span class="tb">Other</span></td>
-    <td class="h1">
-        <span class="xo">✱</span> <a href="https://github.com/Maikuolan/Cronable/releases/tag/v1.0.0">Cronable 1.0.0</a> <small>(2017.10.29)</small><br />
-        <span class="xg">✱</span> <a href="https://github.com/Maikuolan/Cronable/releases/tag/v1.1.0">Cronable 1.1.0</a> <small>(2018.01.20)</small><br />
-    </td>
+    <td class="h2">📝<sub>2</sub> <span class="xr">✱</span> ZB Block 0.6.2 <small>(2018.09.09)</small></td>
     <td class="h2 v53"><span class="xr">❌</span></td>
-    <td class="h2 v54"><small class="xg compatonly">✔️MT</small><span class="xr compatsafe">❌</span></td>
-    <td class="h2 v55"><small class="xg compatonly">✔️MT</small><span class="xr compatsafe">❌</span></td>
+    <td class="h5"><small class="xg">&gt;= 5.4.0</small></td>
+  </tr>
+  <tr>
+    <td class="h1">
+        📝<sub>2</sub> <span class="xg">✱</span> <a href="https://zb-block.net/zbd/">ZB Block 0.6.3</a> <small>(2018.09.12)</small><br />
+    </td>
+    <td class="h2 v53"><small class="xo">✔️NT+SO</small></td>
+    <td class="h2 v54"><small class="xg">✔️MT</small></td>
+    <td class="h2 v55"><small class="xg">✔️MT</small></td>
     <td class="h2 v56"><small class="xg">✔️MT</small></td>
     <td class="h2 v70"><small class="xg">✔️MT</small></td>
     <td class="h2 v71"><small class="xg">✔️MT</small></td>
     <td class="h1 v72"><small class="xg">✔️MT</small></td>
-    <td class="h2 v73"><small class="xb">✔️NR</small></td>
-    <td class="h2 v80"><small class="xb">✔️NR</small></td>
-    <td class="h5"><small><span class="compatonly xg">&gt;= 5.4.0 (MT)</span><span class="compatsafe"><span class="xo">~ 5.6.&gt;=36 (MT)</span> | <span class="xo">~ 7.0.&gt;=30 (MT)</span> | <span class="xo">~ 7.1.&gt;=17 (MT)</span> | <span class="xg">&gt;= 7.2.7 (MT)</span></span></small></td>
+    <td class="h2 v73"><small class="xg">✔️MT+A</small></td>
+    <td class="h2 v74"><small class="xo">✔️NT</small></td>
+    <td class="h5"><small class="xg">&gt;= 5.1.0</small></td>
+    <td class="h2"><span class="xr">❌</span></td>
+  </tr>
+  <tr><td class="h2t" colspan="13"></td></tr>
+  <tr>
+    <td class="h1l" rowspan="2"><span name="Other" class="tb">Other</span></td>
+    <td class="h2"><span class="xo">✱</span> <a href="https://github.com/Maikuolan/Cronable/releases/tag/v1.0.0">Cronable 1.0.0</a> <small>(2017.10.29)</small></td>
+    <td class="h2 v53"><span class="xr">❌</span></td>
+    <td class="h2 v54"><small class="xg">✔️MT</small></td>
+    <td class="h2 v55"><small class="xg">✔️MT</small></td>
+    <td class="h2 v56"><small class="xg">✔️MT</small></td>
+    <td class="h2 v70"><small class="xg">✔️MT</small></td>
+    <td class="h2 v71"><small class="xg">✔️MT</small></td>
+    <td class="h2 v72"><small class="xg">✔️MT</small></td>
+    <td class="h2 v73"><small class="xo">✔️NT</small></td>
+    <td class="h2 v74"><small class="xo">✔️NT</small></td>
+    <td class="h5"><small class="xg">&gt;= 5.4.0 (MT)</small></td>
     <td class="h2"><span class="xr">➖</span></td>
+  </tr>
+  <tr>
+    <td class="h1">
+        <span class="xo">✱</span> <a href="https://github.com/Maikuolan/Cronable/releases/tag/v1.1.0">Cronable 1.1.0</a> <small>(2018.01.20)</small><br />
+        <span class="xg">✱</span> <a href="https://github.com/Maikuolan/Cronable/releases/tag/v1.2.0">Cronable 1.2.0</a> <small>(2018.09.10)</small><br />
+    </td>
+    <td class="h2 v53"><span class="xr">❌</span></td>
+    <td class="h2 v54"><small class="xg">✔️MT</small></td>
+    <td class="h2 v55"><small class="xg">✔️MT</small></td>
+    <td class="h2 v56"><small class="xg">✔️MT</small></td>
+    <td class="h2 v70"><small class="xg">✔️MT</small></td>
+    <td class="h2 v71"><small class="xg">✔️MT</small></td>
+    <td class="h1 v72"><small class="xg">✔️MT</small></td>
+    <td class="h2 v73"><small class="xg">✔️MT+A</small></td>
+    <td class="h2 v74"><small class="xo">✔️NT</small></td>
+    <td class="h5"><small class="xg">&gt;= 5.4.0 (MT)</small></td>
     <td class="h2"><span class="xr">➖</span></td>
   </tr>
 </table>
@@ -442,96 +432,85 @@
 <table>
   <tr>
     <td colspan="2" rowspan="2"></td>
-    <td class="h1t" colspan="6"><a href="https://phpmussel.github.io/">phpMussel</a></td>
+    <td class="h1t" colspan="7"><a href="https://phpmussel.github.io/">phpMussel</a></td>
   </tr>
   <tr>
     <td class="h2"><span class="tb"><span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v0.9.1">0.9.1</a> <small>(2015.12.30)</small></span></td>
     <td class="h2"><span class="tb"><span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v0.10.0">0.10.0</a> <small>(2016.02.27)</small></span></td>
     <td class="h2">📝<sub>1</sub><br /><span class="tb"><span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.0.0">1.0.0</a> <small>(2017.08.20)</small></span></td>
-    <td class="h2"><span class="tb">
+    <td class="h2">
+      <span class="tb">
         <span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.3.1">1.3.1</a> <small>(2018.04.25)</small><br />
         <span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.3.0">1.3.0</a> <small>(2018.04.12)</small><br />
         <span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.2.0">1.2.0</a> <small>(2018.01.20)</small><br />
         <span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.1.0">1.1.0</a> <small>(2017.10.29)</small><br />
-    </span></td>
-    <td class="h2">📝<sub>2</sub><br /><span class="tb">
+      </span>
+    </td>
+    <td class="h2">
+      📝<sub>2</sub><br /><span class="tb">
         <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.4.0">1.4.0</a> <small>(2018.05.25)</small><br />
-    </span></td>
-    <td class="h1"><span class="tb">
-        <span class="xb">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.6.0">1.6.0</a> <small>(T.B.A.)</small><br />
-        <span class="xg">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.5.0">1.5.0</a> <small>(2018.08.01)</small><br />
-    </span></td>
+      </span>
+    </td>
+    <td class="h2">
+      <span class="tb">
+        <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.5.0">1.5.0</a> <small>(2018.08.01)</small><br />
+      </span>
+    </td>
+    <td class="h1">
+      📝<sub>3</sub><br /><span class="tb">
+        <span class="xg">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.6.0">1.6.0</a> <small>(2018.10.06)</small><br />
+      </span>
+    </td>
   </tr>
   <tr>
-    <td class="h1l2" rowspan="6"><span class="tb"><a href="https://github.com/phpMussel/plugin-boilerplate-v1#known-plugins-list">Plugins</a></span></td>
+    <td class="h1l2" rowspan="6"><span class="tb"><a name="Plugins" href="https://github.com/phpMussel/plugin-boilerplate-v1#known-plugins-list">Plugins</a></span></td>
     <td class="h1"><span class="xg">✱</span> <a href="https://github.com/phpMussel/plugin-legacy/releases/tag/v1.0.1">Legacy 1.0.1</a> <small>(2016.05.29)</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><small class="xg">✔️MT</small></td>
-    <td class="h2"><small class="xg">✔️MT</small></td>
-    <td class="h2"><small class="xg">✔️MT</small></td>
+    <td class="h2" colspan="2"><span class="xr">❌</span></td>
+    <td class="h2" colspan="4"><small class="xg">✔️MT</small></td>
     <td class="h1"><small class="xg">✔️MT</small></td>
   </tr>
   <tr>
     <td class="h1"><span class="xg">✱</span> <a href="https://github.com/mtrefzer/plugin-log2mysql">log2mysql 1.0.0</a> <small>(2016.06.29)</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><small class="xg">✔️MT</small></td>
-    <td class="h2"><small class="xg">✔️MT</small></td>
-    <td class="h2"><small class="xg">✔️MT</small></td>
+    <td class="h2" colspan="2"><span class="xr">❌</span></td>
+    <td class="h2" colspan="4"><small class="xg">✔️MT</small></td>
     <td class="h1"><small class="xg">✔️MT</small></td>
   </tr>
   <tr>
     <td class="h2"><span class="xr">✱</span> <a href="https://github.com/phpMussel/plugin-notifications/releases/tag/v1.0.1">Notifications 1.0.1</a> <small>(2016.01.08)</small></td>
     <td class="h2"><small class="xg">✔️MT</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
+    <td class="h2" colspan="5"><span class="xr">❌</span></td>
+    <td class="h2" rowspan="2"><span class="xr">❌</span></td>
   </tr>
   <tr>
     <td class="h2">
-        <span class="xr">✱</span> <a href="https://github.com/phpMussel/plugin-notifications/releases/tag/v1.0.3">Notifications 1.0.3</a> <small>(2016.05.29)</small><br />
-        <span class="xr">✱</span> <a href="https://github.com/phpMussel/plugin-notifications/releases/tag/v1.0.4">Notifications 1.0.4</a> <small>(2016.06.27)</small><br />
+      <span class="xr">✱</span> <a href="https://github.com/phpMussel/plugin-notifications/releases/tag/v1.0.3">Notifications 1.0.3</a> <small>(2016.05.29)</small><br />
+      <span class="xr">✱</span> <a href="https://github.com/phpMussel/plugin-notifications/releases/tag/v1.0.4">Notifications 1.0.4</a> <small>(2016.06.27)</small><br />
     </td>
     <td class="h2"><span class="xr">❌</span></td>
     <td class="h2"><small class="xg">✔️MT</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
+    <td class="h2" colspan="4"><span class="xr">❌</span></td>
   </tr>
   <tr>
     <td class="h1">📝<sub>1+2</sub> <span class="xg">✱</span> <a href="https://github.com/phpMussel/plugin-notifications/releases/tag/v2.0.0">Notifications 2.0.0</a> <small>(2017.04.03)</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><small class="xg">✔️MT</small></td>
-    <td class="h2"><small class="xg">✔️MT</small></td>
-    <td class="h2"><small class="xg">✔️MT</small></td>
+    <td class="h2" colspan="2"><span class="xr">❌</span></td>
+    <td class="h2" colspan="4"><small class="xg">✔️MT</small></td>
     <td class="h1"><small class="xg">✔️MT</small></td>
   </tr>
   <tr>
     <td class="h1"><span class="xg">✱</span> <a href="https://github.com/mtrefzer/plugin-resultAsJson">resultAsJson 1.0.1</a> <small>(2017.07.13)</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><span class="xr">❌</span></td>
-    <td class="h2"><small class="xg">✔️MT</small></td>
-    <td class="h2"><small class="xg">✔️MT</small></td>
-    <td class="h2"><small class="xg">✔️MT</small></td>
+    <td class="h2" colspan="2"><span class="xr">❌</span></td>
+    <td class="h2" colspan="4"><small class="xg">✔️MT</small></td>
     <td class="h1"><small class="xg">✔️MT</small></td>
   </tr>
   <tr>
     <td class="h5l"><span class="tb"><a href="https://github.com/phpMussel/SigTool">S...l</a></span></td>
     <td class="h5">
-        <span class="xo">✱</span> <a href="https://github.com/phpMussel/SigTool/releases/tag/v0.1.0">SigTool 0.1.0</a> <small>(2017.08.08)</small><br />
-        <span class="xg">✱</span> <a href="https://github.com/phpMussel/SigTool/releases/tag/v0.2.0">SigTool 0.2.0</a> <small>(2018.01.20)</small><br />
-        <span class="xb">✱</span> <a href="https://github.com/phpMussel/SigTool/releases/tag/v0.2.1">SigTool 0.2.1</a> <small>(T.B.A.)</small><br />
+      <span class="xo">✱</span> <a href="https://github.com/phpMussel/SigTool/releases/tag/v0.1.0">SigTool 0.1.0</a> <small>(2017.08.08)</small><br />
+      <span class="xg">✱</span> <a href="https://github.com/phpMussel/SigTool/releases/tag/v0.2.0">SigTool 0.2.0</a> <small>(2018.01.20)</small><br />
+      <span class="xb">✱</span> <a href="https://github.com/phpMussel/SigTool/releases/tag/v0.2.1">SigTool 0.2.1</a> <small>(T.B.A.)</small><br />
     </td>
-    <td class="h5"><span class="xr">❌</span></td>
-    <td class="h5"><span class="xr">❌</span></td>
-    <td class="h5"><small class="xg">✔️MT</small></td>
-    <td class="h5"><small class="xg">✔️MT</small></td>
-    <td class="h5"><small class="xg">✔️MT</small></td>
+    <td class="h5" colspan="2"><span class="xr">❌</span></td>
+    <td class="h5" colspan="4"><small class="xg">✔️MT</small></td>
     <td class="h5"><small class="xg">✔️MT</small></td>
   </tr>
 </table>

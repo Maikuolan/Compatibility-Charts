@@ -1,4 +1,4 @@
-Updated: "2018.09.19"
+Updated: "2018.10.20"
 Stable: "7.2.10"
 Unstable: "7.3.0"
 Branch:
@@ -27,10 +27,10 @@ Branch:
   Latest: "7.0.32"
   WarnMin: "7.0.32"
  php71:
-  Latest: "7.1.22"
+  Latest: "7.1.23"
   WarnMin: "7.1.22"
  php72:
-  Latest: "7.2.10"
+  Latest: "7.2.11"
   WarnMin: "7.2.10"
  php73:
   Latest: "7.3.0"

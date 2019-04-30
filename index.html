@@ -13,30 +13,18 @@
 <h1>Compatibility Charts</h1>
 
 <p><strong>
-  <span class="xr h2l">❌</span> <small>Not compatible/available.</small><br />
+  <span class="xg">✱</span> <small>Latest available/tagged version on this branch.</small><br />
+  <span class="xo">✱</span> <small>Version is outdated, but support will normally still be provided.</small><br />
+  <span class="xr">✱</span> <small>Version is outdated/EoL. Support won't normally be provided. <u class="xr">Please update ASAP</u>!</small><br />
+  <span class="xb">✱</span> <small>Version hasn't been released yet (planned or still under development).</small><br />
   <br />
-  <span class="xg h2l">✔️</span> <small>Compatible+Available (manually tested + CI/unit tested).</small><br />
-  <small><span class="xg h2l">✔️MT</span> Compatible+Available (manually tested only; not CI/unit tested).</small><br />
-  <small><span class="xg h2l">✔️UT</span> Compatible+Available (CI/unit tested only; not manually tested).</small><br />
-  <small><span class="xo h2l">✔️NT</span> Assumed to be compatible+available, but not tested.</small><br />
-  <small><span class="h2l">+A/B</span> Tested against alpha/beta releases only.</small><br />
-  <br />
-  <span class="xr h2l">➖</span> <small>Not supported/relevant.</small><br />
-  <small><span class="xo h2l">➖NT</span> Not tested + not enough information to determine compatibility.</small><br />
-  <br />
-  <span class="xg">✱ <small>(Version) Current/Latest on this branch; (Branch) Branch has active support.</small></span><br />
-  <span class="xo h2l">✱</span> <small>(Version) Outdated, but support is provided; (Branch) Security support provided; Active support <u>NOT</u> provided.</small><br />
-  <span class="xr h2l">✱</span> <small>(Version/Branch) Outdated or EoL, and support (of any kind) <u>NOT</u> provided; <u>Please update ASAP</u>!</small><br />
-  <span class="xb h2l">✱</span> <small>(Version/Branch) Planned, but not yet released/developed, or still currently in alpha/beta stage of development.</small><br />
-  <br />
-  <strong>📝<sub>1</sub></strong> <small>This version/release <strong><u>significantly breaks backwards-compatibility</u></strong> with previous versions/releases.</small><br />
-  <strong>📝<sub>2</sub></strong> <small>This version/release <u>marks an end</u> to continued support of all previous versions/releases.</small><br />
-  <strong>📝<sub>3</sub></strong> <small>Previous versions/releases could be <u>vulnerable</u> and are <u>not</u> recommended for use anymore.</small><br />
+  <small><span class="xr">[BC]</span> This version/release <u>significantly</u> breaks (b)ackwards-(c)ompatibility with previous versions/releases (in ways other than just the minimum required PHP version).</small><br />
+  <small><span class="xr">[S]</span> This version/release immediately ends continued (s)upport for all previous versions/releases (for any reason; bugs in previous versions, legal reasons, maintainbility difficulties, early EoL for previous versions, etc).</small><br />
+  <small><span class="xr">[V]</span> This version/release fixes one or more dangerous <u>(v)ulnerabilities</u> discovered in a previous version/release. If using an older version/release, <u class="xr">please update ASAP</u>!</small><br />
   <br />
   See also:<br />
   <small>
     <a href="https://maikuolan.github.io/Vulnerability-Charts/php.html">Vulnerability Charts</a><br />
-    <a href="https://www.cvedetails.com/vendor/74/PHP.html">PHP CVEs</a><br />
     <a href="https://php.net/releases/">PHP releases</a>
   </small>
 </strong></p><hr />
@@ -51,409 +39,456 @@
   Licensing (for this repository): <a href="https://github.com/Maikuolan/Compatibility-Charts/blob/gh-pages/LICENSE.txt">MIT License</a> (feel free to copy and adapt it if you want).
 </em></p><hr />
 
-<p><em>Last modified: <time datetime="2019-03-31">2019.03.31</time></em></p><hr />
+<p><em>Last modified: <time datetime="2019-04-30">2019.04.30</time></em></p><hr />
 
 <table>
   <tr>
-    <td colspan="2" rowspan="2">
-      <p class="h1l i">
-        <u>Jump to:</u><br />
-        <br />
-        <a href="#CIDRAM">CIDRAM</a> ~ <a href="#CIDRAM_L">CIDRAM-L</a> ~ <a href="#Aggregator">Aggregator</a><br />
-        <br />
-        <a href="#phpMussel">phpMussel</a> ~ <a href="#phpMusse_Plugins">phpMussel Plugins</a> ~ <a href="#SigTool">SigTool</a><br />
-        <br />
-        <a href="#SFS_Mass_IP_Checker">SFS Mass IP Checker</a><br />
-        <br />
-        <a href="#ZB_Block">ZB Block</a><br />
-        <br />
-        <a href="#Cronable">Cronable</a><br />
-        <br />
-        <a href="#CommonClasses">Common Classes Package</a><br />
-      </p>
-    </td>
-    <td class="h1t" colspan="5"><a href="https://secure.php.net/supported-versions.php">PHP branches</a><br /><small>Dates reflect initial release date.</small></td>
-    <td class="h1">Other</td>
+    <td></td>
+    <td class="h1t" style="filter:brightness(90%)">Compatibility</td>
   </tr>
   <tr>
-    <td class="h2 v71"><span class="tb xo">✱ PHP 7.1 <small>(2016.12.01)</small></span></td>
-    <td class="h2 v72"><span class="tb xg">✱ PHP 7.2 <small>(2017.11.30)</small></span></td>
-    <td class="h1 v73"><span class="tb xg">✱ PHP 7.3 <small>(2018.12.06)</small></span></td>
-    <td class="h2 v74"><span class="tb xb">✱ PHP 7.4 <small>(T.B.A.)</small></span></td>
-    <td class="h5">
-      <span class="tb">Version Ranges</span>
-    </td>
-    <td class="h1"><span class="tb">
-      <span class="xg">✱ Cronable 1.2.0 <small>(2018.09.10)</small><br />
-      <span class="xo">✱ Cronable 1.1.0 <small>(2018.01.20)</small><br />
-      <span class="xo">✱ Cronable 1.0.0 <small>(2017.10.29)</small><br />
-    </span></td>
-  </tr>
-  <tr><td class="h2t" colspan="8"><a name="CIDRAM"></a></td></tr>
-  <tr>
-    <td class="h1l2" rowspan="11"><span class="tb"><a name="CIDRAM" href="https://cidram.github.io/">CIDRAM</a></span></td>
-    <td class="h2">
+    <td class="h1l2 eol" style="filter:brightness(90%)">
       <span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.0.0">CIDRAM 1.0.0</a> <small>(2017.05.31)</small><br />
       <span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.0.1">CIDRAM 1.0.1</a> <small>(2017.07.27)</small><br />
+      <span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.1.0">CIDRAM 1.1.0</a> <small>(2017.08.20)</small><br />
     </td>
-    <td class="h2 v71" rowspan="5"><span class="xg">✔️</span></td>
-    <td class="h2 v72"><small class="xo">✔️NT</small></td>
-    <td class="h2 v73" rowspan="3"><small class="xo">✔️NT</small></td>
-    <td class="h2 v74" rowspan="4"><span class="xr">❌</span></td>
-    <td class="h5" rowspan="4"><small class="xg">&gt;= 5.4.0 &lt; 7.4.0</small></td>
-    <td class="h2" rowspan="2"><span class="xr">❌</span></td>
+    <td class="h5 eol" style="filter:brightness(90%)">
+      <small class="xg">
+        Requires PHP &gt;= 5.4.0 &lt; 7.4.0 w/ PCRE support.<br />
+        (PHP &gt;= 7.2.0 &lt; 7.4.0 recommended for best performance/features)<br />
+      </small>
+      <small class="xr">Cronable support not added until CIDRAM 1.2.0<br /></small>
+      <small class="xg">Available via Composer/Packagist.</small>
+    </td>
   </tr>
   <tr>
-    <td class="h2"><span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.1.0">CIDRAM 1.1.0</a> <small>(2017.08.20)</small></td>
-    <td class="h2 v72"><small class="xg">✔️MT+A/B</small></td>
-  </tr>
-  <tr>
-    <td class="h2">
+    <td class="h1l2 eol" style="filter:brightness(90%)">
       <span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.2.0">CIDRAM 1.2.0</a> <small>(2017.10.29)</small><br />
       <span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.3.0">CIDRAM 1.3.0</a> <small>(2017.12.23)</small><br />
       <span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.4.0">CIDRAM 1.4.0</a> <small>(2018.01.20)</small><br />
       <span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.4.1">CIDRAM 1.4.1</a> <small>(2018.02.26)</small><br />
       <span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.5.0">CIDRAM 1.5.0</a> <small>(2018.04.10)</small><br />
       <span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.5.1">CIDRAM 1.5.1</a> <small>(2018.05.05)</small><br />
+      <span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.6.0">CIDRAM 1.6.0</a> <small>(2018.05.25) <span class="xr">[S]</span></small><br />
+      <span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.7.0">CIDRAM 1.7.0</a> <small>(2018.07.28)</small><br />
     </td>
-    <td class="h2 v72" rowspan="3"><span class="xg">✔️</span></td>
-    <td class="h2" rowspan="2"><small class="xg">✔️MT</small></td>
+    <td class="h5 eol" style="filter:brightness(90%)">
+      <small class="xg">
+        Requires PHP &gt;= 5.4.0 &lt; 7.4.0 w/ PCRE support.<br />
+        (PHP &gt;= 7.2.0 &lt; 7.4.0 recommended for best performance/features)<br />
+        (cURL support also recommended for best performance/features)<br />
+        Compatible with Cronable &gt;= 1.0.0<br />
+        Available via Composer/Packagist.
+      </small>
+    </td>
   </tr>
   <tr>
-    <td class="h2">
-      📝<sub>2</sub> <span class="xo">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.6.0">CIDRAM 1.6.0</a> <small>(2018.05.25)</small><br />
-      <span class="xo">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.7.0">CIDRAM 1.7.0</a> <small>(2018.07.28)</small><br />
-    </td>
-    <td class="h2 v73"><small class="xg">✔️MT+A/B</small></td>
-  </tr>
-  <tr>
-    <td class="h1">
+    <td class="h1l2">
       <span class="xo">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.8.0">CIDRAM 1.8.0</a> <small>(2018.10.06)</small><br />
       <span class="xo">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.9.0">CIDRAM 1.9.0</a> <small>(2019.01.08)</small><br />
       <span class="xo">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.10.0">CIDRAM 1.10.0</a> <small>(2019.01.30)</small><br />
       <span class="xo">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.11.0">CIDRAM 1.11.0</a> <small>(2019.03.01)</small><br />
-      <span class="xg">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.11.1">CIDRAM 1.11.1</a> <small>(2019.03.31)</small><br />
+      <span class="xo">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.11.1">CIDRAM 1.11.1</a> <small>(2019.03.31)</small><br />
     </td>
-    <td class="h1 v73"><span class="xg">✔️</span></td>
-    <td class="h2 v74"><small class="xo">✔️NT</small></td>
-    <td class="h5"><small class="xg">&gt;= 5.4.0</small></td>
-    <td class="h1"><small class="xg">✔️MT</small></td>
+    <td class="h5">
+      <small class="xg">
+        Requires PHP &gt;= 5.4.0 w/ PCRE support.<br />
+        (PHP &gt;= 7.2.0 recommended for best performance/features)<br />
+        (cURL support also recommended for best performance/features)<br />
+        Compatible with Cronable &gt;= 1.0.0<br />
+        Available via Composer/Packagist.
+      </small>
+    </td>
   </tr>
   <tr>
-    <td class="h2">
+    <td class="h1l2">
+      <span class="xg">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v1.12.0">CIDRAM 1.12.0</a> <small>(2019.04.30)</small><br />
+    </td>
+    <td class="h5">
+      <small class="xg">
+        Requires PHP &gt;= 5.4.0 w/ PCRE support.<br />
+        (PHP &gt;= 7.2.0 recommended for best performance/features)<br />
+        (cURL support also recommended for best performance/features)<br />
+        (APCU, Memcached, Redis, or PDO support also recommended for best performance/features)<br />
+        Compatible with Cronable &gt;= 1.0.0<br />
+        Available via Composer/Packagist.
+      </small>
+    </td>
+  </tr>
+  <tr>
+    <td class="h1l2" style="filter:brightness(90%)">
       <span class="xb">✱</span> CIDRAM 2.0.0 <small>(T.B.A.)</small><br />
     </td>
-    <td class="h2 v71"><span class="xr">❌</span></td>
-    <td class="h2 v72"><small class="xo">✔️NT</small></td>
-    <td class="h2 v73"><small class="xo">✔️NT</small></td>
-    <td class="h2 v74"><small class="xo">✔️NT</small></td>
-    <td class="h5"><small class="xo">&gt;= 7.2.0 (NT)</small></td>
-    <td class="h2"><small class="xo">✔️NT</small></td>
-  </tr>
-  <tr><td class="h2t" colspan="7"><a name="CIDRAM_L"></a></td></tr>
-  <tr>
-    <td class="h1">
-      📝<sub>2</sub> <span class="xr">✱</span> CIDRAM-L 1.8.0 <small>(2018.09.25)</small><br />
-      <span class="xo">✱</span> CIDRAM-L 1.9.0 <small>(2019.01.08)</small><br />
-      <span class="xo">✱</span> CIDRAM-L 1.10.0 <small>(2019.01.30)</small><br />
-      <span class="xg">✱</span> <a href="https://github.com/CIDRAM/CIDRAM-Extras/tree/master/cidram-l">CIDRAM-L 1.10.1</a> <small>(2019.03.02)</small><br />
+    <td class="h5" style="filter:brightness(90%)">
+      <small class="xg">
+        Requires PHP &gt;= 7.2.0 w/ PCRE support.<br />
+        (cURL support also recommended for best performance/features)<br />
+        (APCU, Memcached, Redis, or PDO support also recommended for best performance/features)<br />
+        Compatible with Cronable &gt;= 1.0.0<br />
+      </small>
+      <small class="xb">*Will* be available via Composer/Packagist (when tagged/released).</small>
     </td>
-    <td class="h2 v71"><small class="xg">✔️MT</small></td>
-    <td class="h2 v72"><small class="xg">✔️MT</small></td>
-    <td class="h1 v73"><small class="xg">✔️MT</small></td>
-    <td class="h2 v74"><small class="xo">✔️NT</small></td>
-    <td class="h5"><small class="xg">&gt;= 5.4.0 (MT)</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
   </tr>
-  <tr><td class="h2t" colspan="7"><a name="Aggregator"></a></td></tr>
+  <tr><td class="h1t" colspan="2" style="filter:brightness(80%)"></td></tr>
   <tr>
-    <td class="h2">
+    <td class="h1l2">
+      <span class="xr">✱</span> CIDRAM-L 1.9.0 <small>(2019.01.08)</small><br />
+      <span class="xo">✱</span> CIDRAM-L 1.10.0 <small>(2019.01.30)</small><br />
+      <span class="xo">✱</span> CIDRAM-L 1.10.1</a> <small>(2019.03.02)</small><br />
+      <span class="xg">✱</span> <a href="https://github.com/CIDRAM/CIDRAM-Extras/tree/master/cidram-l">CIDRAM-L 1.10.2</a> <small>(2019.04.23)</small><br />
+    </td>
+    <td class="h5">
+      <small class="xg">
+        Requires PHP &gt;= 5.4.0 w/ PCRE + phar support.<br />
+        (PHP &gt;= 7.2.0 recommended for best performance/features)<br />
+      </small>
+      <small class="xr">
+        Not compatible with Cronable.<br />
+        Not available via Composer/Packagist.
+      </small>
+    </td>
+  </tr>
+  <tr><td class="h1t" colspan="2" style="filter:brightness(80%)"></td></tr>
+  <tr>
+    <td class="h1l2">
       <span class="xo">✱</span> <a href="https://github.com/CIDRAM/Aggregator/releases/tag/v1.0.0">Aggregator 1.0.0</a> <small>(2017.09.21)</small><br />
       <span class="xo">✱</span> <a href="https://github.com/CIDRAM/Aggregator/releases/tag/v1.1.0">Aggregator 1.1.0</a> <small>(2017.10.29)</small><br />
-    </td>
-    <td class="h2 v71" rowspan="2"><span class="xg">✔️</span></td>
-    <td class="h2 v72" rowspan="2"><span class="xg">✔️</span></td>
-    <td class="h2 v73"><small class="xg">✔️MT+A/B</small></td>
-    <td class="h2 v74" rowspan="2"><small class="xo">✔️NT</small></td>
-    <td class="h5" rowspan="2"><small class="xg">&gt;= 5.4.0</small></td>
-    <td class="h2" rowspan="2"><span class="xr">❌</span></td>
-  </tr>
-  <tr>
-    <td class="h1">
       <span class="xg">✱</span> <a href="https://github.com/CIDRAM/Aggregator/releases/tag/v1.2.0">Aggregator 1.2.0</a> <small>(2019.01.09)</small><br />
     </td>
-    <td class="h1 v73"><span class="xg">✔️</span></td>
-  </tr>
-  <tr><td class="h2t" colspan="8"><a name="phpMussel"></a></td></tr>
-  <tr>
-    <td class="h1l2" rowspan="10"><span class="tb"><a name="phpMussel" href="https://phpmussel.github.io/">phpMussel</a></span></td>
-    <td class="h2">📝<sub>1</sub> <span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.0.0">phpMussel 1.0.0</a> <small>(2017.08.20)</small></td>
-    <td class="h2 v71" rowspan="5"><span class="xg">✔️</span></td>
-    <td class="h2 v72"><small class="xg">✔️MT+A/B</small></td>
-    <td class="h2 v73" rowspan="2"><small class="xo">✔️NT</small></td>
-    <td class="h2 v74" rowspan="3"><span class="xr">❌</span></td>
-    <td class="h5" rowspan="3"><small class="xg">&gt;= 5.4.0 &lt; 7.4.0</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
+    <td class="h5">
+      <small class="xg">Requires PHP &gt;= 5.4.0 w/ PCRE support.<br /></small>
+      <small class="xg">Available via Composer/Packagist.</small>
+    </td>
   </tr>
   <tr>
-    <td class="h2">
+    <td class="h1l2" style="filter:brightness(90%)">
+      <span class="xb">✱</span> Aggregator 2.0.0 <small>(T.B.A.)</small><br />
+    </td>
+    <td class="h5" style="filter:brightness(90%)">
+      <small class="xg">Requires PHP &gt;= 7.2.0 w/ PCRE support.<br /></small>
+      <small class="xb">*Will* be available via Composer/Packagist (when tagged/released).</small>
+    </td>
+  </tr>
+  <tr><td class="h1t" colspan="2" style="filter:brightness(80%)"></td></tr>
+  <tr>
+    <td class="h1l2 eol" style="filter:brightness(90%)">
+      <span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.0.0">phpMussel 1.0.0</a> <small>(2017.08.20) <span class="xr">[BC]</span></small><br />
+    </td>
+    <td class="h5 eol" style="filter:brightness(90%)">
+      <small class="xg">
+        Requires PHP &gt;= 5.4.0 &lt; 7.4.0 w/ PCRE support.<br />
+        (PHP &gt;= 7.2.0 &lt; 7.4.0 recommended for best performance/features)<br />
+        (cURL + Bz2 + Lzf + Rar + Zip + zlib support also recommended for best performance/features)<br />
+      </small>
+      <small class="xr">Cronable support not added until phpMussel 1.1.0<br /></small>
+      <small class="xg">Available via Composer/Packagist.</small>
+    </td>
+  </tr>
+  <tr>
+    <td class="h1l2 eol" style="filter:brightness(90%)">
       <span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.1.0">phpMussel 1.1.0</a> <small>(2017.10.29)</small><br />
       <span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.2.0">phpMussel 1.2.0</a> <small>(2018.01.20)</small><br />
       <span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.3.0">phpMussel 1.3.0</a> <small>(2018.04.12)</small><br />
       <span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.3.1">phpMussel 1.3.1</a> <small>(2018.04.25)</small><br />
-    </td>
-    <td class="h2 v72" rowspan="4"><span class="xg">✔️</span></td>
-    <td class="h2" rowspan="3"><small class="xg">✔️MT</small></td>
-  </tr>
-  <tr>
-    <td class="h2">
-      📝<sub>2</sub> <span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.4.0">phpMussel 1.4.0</a> <small>(2018.05.25)</small><br />
+      <span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.4.0">phpMussel 1.4.0</a> <small>(2018.05.25) <span class="xr">[S]</span></small><br />
       <span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.5.0">phpMussel 1.5.0</a> <small>(2018.08.01)</small><br />
     </td>
-    <td class="h2 v73" rowspan="2"><small class="xg">✔️MT+A/B</small></td>
+    <td class="h5 eol" style="filter:brightness(90%)">
+      <small class="xg">
+        Requires PHP &gt;= 5.4.0 &lt; 7.4.0 w/ PCRE support.<br />
+        (PHP &gt;= 7.2.0 &lt; 7.4.0 recommended for best performance/features)<br />
+        (cURL + Bz2 + Lzf + Rar + Zip + zlib support also recommended for best performance/features)<br />
+        Compatible with Cronable &gt;= 1.0.0<br />
+        Available via Composer/Packagist.
+      </small>
+    </td>
   </tr>
   <tr>
-    <td class="h2">📝<sub>3</sub> <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.6.0">phpMussel 1.6.0</a> <small>(2018.10.06)</small></td>
-    <td class="h2 v74" rowspan="2"><small class="xo">✔️NT</small></td>
-    <td class="h5" rowspan="2"><small class="xg">&gt;= 5.4.0</small></td>
-  </tr>
-  <tr>
-    <td class="h1">
+    <td class="h1l2">
+      <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.6.0">phpMussel 1.6.0</a> <small>(2018.10.06) <span class="xr">[V]</span></small><br />
       <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.7.0">phpMussel 1.7.0</a> <small>(2018.10.20)</small><br />
       <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.8.0">phpMussel 1.8.0</a> <small>(2019.01.29)</small><br />
       <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.9.0">phpMussel 1.9.0</a> <small>(2019.02.28)</small><br />
-      <span class="xg">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.9.1">phpMussel 1.9.1</a> <small>(2019.03.31)</small><br />
+      <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.9.1">phpMussel 1.9.1</a> <small>(2019.03.31)</small><br />
     </td>
-    <td class="h1 v73"><span class="xg">✔️</span></td>
-    <td class="h1"><small class="xg">✔️MT</small></td>
+    <td class="h5">
+      <small class="xg">
+        Requires PHP &gt;= 5.4.0 w/ PCRE support.<br />
+        (PHP &gt;= 7.2.0 recommended for best performance/features)<br />
+        (cURL + Bz2 + Lzf + Rar + Zip + zlib support also recommended for best performance/features)<br />
+        Compatible with Cronable &gt;= 1.0.0<br />
+        Available via Composer/Packagist.
+      </small>
+    </td>
   </tr>
   <tr>
-    <td class="h2">
+    <td class="h1l2">
+      <span class="xg">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.10.0">phpMussel 1.10.0</a> <small>(2019.04.30)</small><br />
+    </td>
+    <td class="h5">
+      <small class="xg">
+        Requires PHP &gt;= 5.4.0 w/ PCRE support.<br />
+        (PHP &gt;= 7.2.0 recommended for best performance/features)<br />
+        (cURL + Bz2 + Lzf + Rar + Zip + zlib support also recommended for best performance/features)<br />
+        (APCU, Memcached, Redis, or PDO support also recommended for best performance/features)<br />
+        Compatible with Cronable &gt;= 1.0.0<br />
+        Available via Composer/Packagist.
+      </small>
+    </td>
+  </tr>
+  <tr>
+    <td class="h1l2" style="filter:brightness(90%)">
       <span class="xb">✱</span> phpMussel 2.0.0 <small>(T.B.A.)</small><br />
     </td>
-    <td class="h2 v71"><span class="xr">❌</span></td>
-    <td class="h2 v72"><small class="xo">✔️NT</small></td>
-    <td class="h2 v73"><small class="xo">✔️NT</small></td>
-    <td class="h2 v74"><small class="xo">✔️NT</small></td>
-    <td class="h5"><small class="xo">&gt;= 7.2.0 (NT)</small></td>
-    <td class="h2"><small class="xo">✔️NT</small></td>
-  </tr>
-  <tr><td class="h2t" colspan="7"><a name="SigTool"></a></td></tr>
-  <tr>
-    <td class="h2"><span class="xo">✱</span> <a href="https://github.com/phpMussel/SigTool/releases/tag/v0.1.0">SigTool 0.1.0</a> <small>(2017.08.08)</small></td>
-    <td class="h2 v71" rowspan="3"><span class="xg">✔️</span></td>
-    <td class="h2 v72" rowspan="3"><span class="xg">✔️</span></td>
-    <td class="h2 v73"><small class="xo">✔️NT</small></td>
-    <td class="h2 v74" rowspan="3"><small class="xo">✔️NT</small></td>
-    <td class="h5" rowspan="3"><small class="xg">&gt;= 7.0.3</small></td>
-    <td class="h2" rowspan="3"><span class="xr">❌</span></td>
-  </tr>
-  <tr>
-    <td class="h2">
-      <span class="xo">✱</span> <a href="https://github.com/phpMussel/SigTool/releases/tag/v0.2.0">SigTool 0.2.0</a> <small>(2018.01.20)</small><br />
-      <span class="xo">✱</span> <a href="https://github.com/phpMussel/SigTool/releases/tag/v0.2.1">SigTool 0.2.1</a> <small>(2018.10.20)</small><br />
-    </td>
-    <td class="h2 v73"><small class="xg">✔️MT+A/B</small></td>
-  </tr>
-  <tr>
-    <td class="h1">
-      <span class="xo">✱</span> <a href="https://github.com/phpMussel/SigTool/releases/tag/v0.2.2">SigTool 0.2.2</a> <small>(2018.10.23)</small><br />
-      <span class="xg">✱</span> <a href="https://github.com/phpMussel/SigTool/releases/tag/v0.2.3">SigTool 0.2.3</a> <small>(2019.01.25)</small><br />
-    </td>
-    <td class="h1 v73"><span class="xg">✔️</span></td>
-  </tr>
-  <tr><td class="h2t" colspan="8"><a name="SFS_Mass_IP_Checker"></a></td></tr>
-  <tr>
-    <td class="h1l2" rowspan="2"><span class="tb"><a name="SFS-Mass-IP-Checker" href="https://github.com/Maikuolan/SFS-Mass-IP-Checker" title="SFS Mass IP Checker">SFS M...r</a></span></td>
-    <td class="h2">
-      <span class="xr">✱</span> All versions &lt; 0.1.3<br />
-      <small>Subject to some significant bugs.<br />If using these, please update immediately.</small>
-    </td>
-    <td class="h2 v71" rowspan="2"><small class="xg">✔️MT</small></td>
-    <td class="h2 v72"><small class="xg">✔️MT+A/B</small></td>
-    <td class="h2 v73"><small class="xo">✔️NT</small></td>
-    <td class="h2 v74" rowspan="2"><small class="xo">✔️NT</small></td>
-    <td class="h5" rowspan="2"><small class="xg">&gt;= 5.3.0 (MT)</small></td>
-    <td class="h2" rowspan="2"><span class="xr">❌</span></td>
-  </tr>
-  <tr>
-    <td class="h1">
-      📝<sub>2</sub> <span class="xg">✱</span> <a href="https://github.com/Maikuolan/SFS-Mass-IP-Checker/releases/tag/v0.1.3">SFS Mass IP Checker 0.1.3</a> <small>(2016.09.10)</small><br />
-    </td>
-    <td class="h2 v72"><small class="xg">✔️MT</small></td>
-    <td class="h1 v73"><small class="xg">✔️MT+A/B</small></td>
-  </tr>
-  <tr><td class="h2t" colspan="8"><a name="ZB_Block"></a></td></tr>
-  <tr>
-    <td class="h1l2" rowspan="6"><span class="tb"><a name="ZB-Block" href="https://zb-block.net/">ZB Block</a></span></td>
-    <td class="h2">
-      <span class="xr">✱</span> <a href="https://zb-block.net/zbd/">ZB Block 0.4.10a3</a> <small>(2013.01.19)</small><br />
-      <small>Versions &lt;= 0.4.10a3 released by Zaphod</small><br />
-    </td>
-    <td class="h2 v71"><span class="xr">❌</span></td>
-    <td class="h2 v72"><span class="xr">❌</span></td>
-    <td class="h2 v73"><span class="xr">❌</span></td>
-    <td class="h2 v74"><span class="xr">❌</span></td>
-    <td class="h5"><small class="xr">&gt;= 5.0.0 &lt; 7.0.0 (MT)</small></td>
-    <td class="h2" rowspan="7"><span class="xr">❌</span></td>
-  </tr>
-  <tr>
-    <td class="h2">
-      📝<sub>2</sub> <span class="xr">✱</span> ZB Block 0.4.20 <small>(2018.01.01)</small><br />
-      <small>Versions &gt;= 0.4.20 released by JamesC</small><br />
-      <span class="xr">✱</span> <a href="https://zb-block.net/zbd/">ZB Block 0.4.21</a> <small>(2018.02.01)</small><br />
-    </td>
-    <td class="h2 v71" rowspan="4"><span class="xg">✔️</span></td>
-    <td class="h2 v72" rowspan="4"><span class="xg">✔️</span></td>
-    <td class="h2 v73" rowspan="4"><small class="xo">✔️NT</small></td>
-    <td class="h2 v74" rowspan="5"><small class="xo">✔️NT</small></td>
-    <td class="h5"><small class="xg">&gt;= 5.0.0</small></td>
-  </tr>
-  <tr>
-    <td class="h2">
-      <span class="xr">✱</span> ZB Block 0.5.0 <small>(2018.02.03)</small><br />
-      <span class="xr">✱</span> ZB Block 0.5.1 <small>(2018.03.19)</small><br />
-      <span class="xr">✱</span> <a href="https://zb-block.net/zbd/">ZB Block 0.5.2</a> <small>(2018.03.28)</small><br />
-    </td>
-    <td class="h5" rowspan="2"><small class="xg">&gt;= 5.1.0</small></td>
-  </tr>
-  <tr>
-    <td class="h2">
-      <span class="xr">✱</span> ZB Block 0.6.0 <small>(2018.05.22)</small><br />
-      <span class="xr">✱</span> ZB Block 0.6.1 <small>(2018.05.28)</small><br />
+    <td class="h5" style="filter:brightness(90%)">
+      <small class="xg">
+        Requires PHP &gt;= 7.2.0 w/ PCRE support.<br />
+        (cURL + Bz2 + Lzf + Rar + Zip + zlib support also recommended for best performance/features)<br />
+        (APCU, Memcached, Redis, or PDO support also recommended for best performance/features)<br />
+        Compatible with Cronable &gt;= 1.0.0<br />
+      </small>
+      <small class="xb">*Will* be available via Composer/Packagist (when tagged/released).</small>
     </td>
   </tr>
+  <tr><td class="h1t" colspan="2" style="filter:brightness(80%)"></td></tr>
   <tr>
-    <td class="h2">📝<sub>2</sub> <span class="xr">✱</span> ZB Block 0.6.2 <small>(2018.09.09)</small></td>
-    <td class="h5"><small class="xg">&gt;= 5.4.0</small></td>
-  </tr>
-  <tr>
-    <td class="h1">
-      📝<sub>2</sub> <span class="xo">✱</span> <a href="https://zb-block.net/zbd/">ZB Block 0.6.3</a> <small>(2018.09.12)</small><br />
-      <span class="xo">✱</span> <a href="https://zb-block.net/zbd/">ZB Block 0.6.4</a> <small>(2019.01.01)</small><br />
-      <span class="xg">✱</span> <a href="https://zb-block.net/zbd/">ZB Block 0.6.5</a> <small>(2019.04.01)</small><br />
-    </td>
-    <td class="h2 v71"><small class="xg">✔️MT</small></td>
-    <td class="h2 v72"><small class="xg">✔️MT</small></td>
-    <td class="h1 v73"><small class="xg">✔️MT</small></td>
-    <td class="h5"><small class="xg">&gt;= 5.1.0 (MT)</small></td>
-  </tr>
-  <tr><td class="h2t" colspan="8"><a name="Cronable"></a></td></tr>
-  <tr>
-    <td class="h1l" rowspan="5"><span name="Other" class="tb">Other</span></td>
-    <td class="h2"><span class="xo">✱</span> <a href="https://github.com/Maikuolan/Cronable/releases/tag/v1.0.0">Cronable 1.0.0</a> <small>(2017.10.29)</small></td>
-    <td class="h2 v71" rowspan="3"><small class="xg">✔️MT</small></td>
-    <td class="h2 v72" rowspan="3"><small class="xg">✔️MT</small></td>
-    <td class="h2 v73"><small class="xo">✔️NT</small></td>
-    <td class="h2 v74" rowspan="3"><small class="xo">✔️NT</small></td>
-    <td class="h5" rowspan="3"><small class="xg">&gt;= 5.4.0 (MT)</small></td>
-    <td class="h2" rowspan="3"><span class="xr">➖</span></td>
-  </tr>
-  <tr>
-    <td class="h2"><span class="xo">✱</span> <a href="https://github.com/Maikuolan/Cronable/releases/tag/v1.1.0">Cronable 1.1.0</a> <small>(2018.01.20)</small></td>
-    <td class="h2 v73"><small class="xg">✔️MT+A/B</small></td>
-  </tr>
-  <tr>
-    <td class="h1">
-      <span class="xg">✱</span> <a href="https://github.com/Maikuolan/Cronable/releases/tag/v1.2.0">Cronable 1.2.0</a> <small>(2018.09.10)</small><br />
-    </td>
-    <td class="h1 v73"><small class="xg">✔️MT</small></td>
-  </tr>
-  <tr><td class="h2t" colspan="7"><a name="CommonClasses"></a></td></tr>
-  <tr>
-    <td class="h1"><span class="xg">✱</span> <a href="https://github.com/Maikuolan/Common/releases/tag/v1.0.0">Common Classes Package 1.0.0</a> <small>(2019.02.28)</small></td>
-    <td class="h2 v71"><small class="xg">✔️MT</small></td>
-    <td class="h2 v72"><small class="xg">✔️MT</small></td>
-    <td class="h1 v73"><small class="xg">✔️MT</small></td>
-    <td class="h2 v74"><small class="xo">✔️NT</small></td>
-    <td class="h5"><small class="xg">&gt;= 5.4.0 (MT)</small></td>
-    <td class="h2"><span class="xr">❌</span></td>
-  </tr>
-</table>
-
-<hr />
-
-<table>
-  <tr>
-    <td colspan="2" rowspan="2"></td>
-    <td class="h1t" colspan="7"><a name="phpMusse_Plugins"></a><a href="https://phpmussel.github.io/">phpMussel</a></td>
-  </tr>
-  <tr>
-    <td class="h2">📝<sub>1</sub><br /><span class="tb"><span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.0.0">1.0.0</a> <small>(2017.08.20)</small></span></td>
-    <td class="h2">
-      <span class="tb">
-        <span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.3.1">1.3.1</a> <small>(2018.04.25)</small><br />
-        <span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.3.0">1.3.0</a> <small>(2018.04.12)</small><br />
-        <span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.2.0">1.2.0</a> <small>(2018.01.20)</small><br />
-        <span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.1.0">1.1.0</a> <small>(2017.10.29)</small><br />
-      </span>
-    </td>
-    <td class="h2">
-      📝<sub>2</sub><br /><span class="tb">
-        <span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.4.0">1.4.0</a> <small>(2018.05.25)</small><br />
-      </span>
-    </td>
-    <td class="h2">
-      <span class="tb">
-        <span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.5.0">1.5.0</a> <small>(2018.08.01)</small><br />
-      </span>
-    </td>
-    <td class="h2">
-      📝<sub>3</sub><br /><span class="tb">
-        <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.6.0">1.6.0</a> <small>(2018.10.06)</small><br />
-      </span>
-    </td>
-    <td class="h1">
-      <span class="tb">
-        <span class="xg">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.9.1">1.9.1</a> <small>(2019.03.31)</small><br />
-        <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.9.0">1.9.0</a> <small>(2019.02.28)</small><br />
-        <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.8.0">1.8.0</a> <small>(2019.01.29)</small><br />
-        <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.7.0">1.7.0</a> <small>(2018.10.20)</small><br />
-      </span>
-    </td>
-    <td class="h2">
-      <span class="tb">
-        <span class="xb">✱</span> 2.0.0</a> <small>(T.B.A.)</small><br />
-      </span>
-    </td>
-  </tr>
-  <tr>
-    <td class="h1l2" rowspan="4"><span class="tb"><a name="Plugins" href="https://github.com/phpMussel/plugin-boilerplate-v1#known-plugins-list">Plugins</a></span></td>
-    <td class="h1"><span class="xg">✱</span> <a href="https://github.com/phpMussel/plugin-legacy/releases/tag/v1.0.1">Legacy 1.0.1</a> <small>(2016.05.29)</small></td>
-    <td class="h2" colspan="5"><small class="xg">✔️MT</small></td>
-    <td class="h1"><small class="xg">✔️MT</small></td>
-    <td class="h2"><small class="xr">❌</small></td>
-  </tr>
-  <tr>
-    <td class="h1"><span class="xg">✱</span> <a href="https://github.com/mtrefzer/plugin-log2mysql">log2mysql 1.0.0</a> <small>(2016.06.29)</small></td>
-    <td class="h2" colspan="5"><small class="xg">✔️MT</small></td>
-    <td class="h1"><small class="xg">✔️MT</small></td>
-    <td class="h2"><small class="xo">✔️NT</small></td>
-  </tr>
-  <tr>
-    <td class="h1">📝<sub>1+2</sub> <span class="xg">✱</span> <a href="https://github.com/phpMussel/plugin-notifications/releases/tag/v2.0.0">Notifications 2.0.0</a> <small>(2017.04.03)</small></td>
-    <td class="h2" colspan="5"><small class="xg">✔️MT</small></td>
-    <td class="h1"><small class="xg">✔️MT</small></td>
-    <td class="h2"><small class="xo">✔️NT</small></td>
-  </tr>
-  <tr>
-    <td class="h1"><span class="xg">✱</span> <a href="https://github.com/mtrefzer/plugin-resultAsJson">resultAsJson 1.0.1</a> <small>(2017.07.13)</small></td>
-    <td class="h2" colspan="5"><small class="xg">✔️MT</small></td>
-    <td class="h1"><small class="xg">✔️MT</small></td>
-    <td class="h2"><small class="xo">✔️NT</small></td>
-  </tr>
-  <tr>
-    <td class="h5l"><span class="tb"><a href="https://github.com/phpMussel/SigTool">SigTool</a></span></td>
-    <td class="h5">
+    <td class="h1l2">
       <span class="xo">✱</span> <a href="https://github.com/phpMussel/SigTool/releases/tag/v0.1.0">SigTool 0.1.0</a> <small>(2017.08.08)</small><br />
       <span class="xo">✱</span> <a href="https://github.com/phpMussel/SigTool/releases/tag/v0.2.0">SigTool 0.2.0</a> <small>(2018.01.20)</small><br />
       <span class="xo">✱</span> <a href="https://github.com/phpMussel/SigTool/releases/tag/v0.2.1">SigTool 0.2.1</a> <small>(2018.10.20)</small><br />
       <span class="xo">✱</span> <a href="https://github.com/phpMussel/SigTool/releases/tag/v0.2.2">SigTool 0.2.2</a> <small>(2018.10.23)</small><br />
       <span class="xg">✱</span> <a href="https://github.com/phpMussel/SigTool/releases/tag/v0.2.3">SigTool 0.2.3</a> <small>(2019.01.25)</small><br />
     </td>
-    <td class="h5" colspan="5"><small class="xg">✔️MT</small></td>
-    <td class="h5"><small class="xg">✔️MT</small></td>
-    <td class="h5"><small class="xo">✔️NT</small></td>
+    <td class="h5">
+      <small class="xg">Requires PHP &gt;= 7.0.3 w/ PCRE + zlib + phar support.<br /></small>
+      <small class="xo">Requires approx. ~1GB available RAM or disc space to run.<br /></small>
+      <small class="xg">Generated signature files are compatible with phpMussel &gt;= 1.0.0<br /></small>
+      <small class="xr">Generated signature files are NOT compatible with phpMussel &lt; 1.0.0<br /></small>
+      <small class="xg">Available via Composer/Packagist.<br /></small>
+      <br />
+      <small>
+        Note: SigTool for phpMussel, and Sigtool for ClamAV, are two distinct, separate packages.<br />
+        The information included here relates to the SigTool for phpMussel.
+      </small>
+    </td>
+  </tr>
+  <tr><td class="h1t" colspan="2" style="filter:brightness(80%)"></td></tr>
+  <tr>
+    <td class="h1l2">
+      <span class="xg">✱</span> <a href="https://github.com/Maikuolan/SFS-Mass-IP-Checker/releases/tag/v0.1.3">SFS Mass IP Checker 0.1.3</a> <small>(2016.09.10) <span class="xr">[S]</span><br />(<span class="xr">Please don't use versions older than this; They are very buggy</span>).</small><br />
+    </td>
+    <td class="h5">
+      <small class="xg">Requires PHP &gt;= 5.3.0 w/ PCRE support.<br /></small>
+      <small class="xg">Available via Composer/Packagist.</small>
+    </td>
+  </tr>
+  <tr><td class="h1t" colspan="2" style="filter:brightness(80%)"></td></tr>
+  <tr>
+    <td class="h1l2 eol" style="filter:brightness(90%)">
+      <span class="xr">✱</span> <a href="https://zb-block.net/zbd/">ZB Block 0.4.10a3</a> <small>(2013.01.19)</small><br />
+      <small>Versions &lt;= 0.4.10a3 authored/released by Zaphod.</small><br />
+    </td>
+    <td class="h5 eol" style="filter:brightness(90%)">
+      <small class="xr">
+        Requires PHP &gt;= 5.0.0 &lt; 7.0.0 w/ PCRE support.<br />
+        (Latest PHP version in the required PHP version range is already EoL)<br />
+        Not available via Composer/Packagist.
+      </small>
+    </td>
+  </tr>
+  <tr>
+    <td class="h1l2 eol" style="filter:brightness(90%)">
+      <span class="xr">✱</span> ZB Block 0.4.20 <small>(2018.01.01) <span class="xr">[S]</span></small><br />
+      <small>Versions &gt;= 0.4.20 authored/released by <a href="https://www.zb-block.net/zbf/member.php?u=2">JamesC</a>.</small><br />
+      <span class="xr">✱</span> <a href="https://zb-block.net/zbd/">ZB Block 0.4.21</a> <small>(2018.02.01)</small><br />
+    </td>
+    <td class="h5 eol" style="filter:brightness(90%)">
+      <small class="xg">Requires PHP &gt;= 5.0.0 w/ PCRE support.<br /></small>
+      <small class="xr">Not available via Composer/Packagist.</small>
+    </td>
+  </tr>
+  <tr>
+    <td class="h1l2 eol" style="filter:brightness(90%)">
+      <span class="xr">✱</span> ZB Block 0.5.0 <small>(2018.02.03)</small><br />
+      <span class="xr">✱</span> ZB Block 0.5.1 <small>(2018.03.19)</small><br />
+      <span class="xr">✱</span> <a href="https://zb-block.net/zbd/">ZB Block 0.5.2</a> <small>(2018.03.28)</small><br />
+      <span class="xr">✱</span> ZB Block 0.6.0 <small>(2018.05.22)</small><br />
+      <span class="xr">✱</span> ZB Block 0.6.1 <small>(2018.05.28)</small><br />
+    </td>
+    <td class="h5 eol" style="filter:brightness(90%)">
+      <small class="xg">Requires PHP &gt;= 5.1.0 w/ PCRE support.<br /></small>
+      <small class="xr">Not available via Composer/Packagist.</small>
+    </td>
+  </tr>
+  <tr>
+    <td class="h1l2 eol" style="filter:brightness(90%)"><span class="xr">✱</span> ZB Block 0.6.2 <small>(2018.09.09) <span class="xr">[S]</span></small></td>
+    <td class="h5 eol" style="filter:brightness(90%)">
+      <small class="xg">Requires PHP &gt;= 5.4.0 w/ PCRE support.<br /></small>
+      <small class="xr">Not available via Composer/Packagist.</small>
+    </td>
+  </tr>
+  <tr>
+    <td class="h1l2">
+      <span class="xo">✱</span> <a href="https://zb-block.net/zbd/">ZB Block 0.6.3</a> <small>(2018.09.12) <span class="xr">[S]</span></small><br />
+      <span class="xo">✱</span> <a href="https://zb-block.net/zbd/">ZB Block 0.6.4</a> <small>(2019.01.01)</small><br />
+      <span class="xg">✱</span> <a href="https://zb-block.net/zbd/">ZB Block 0.6.5</a> <small>(2019.04.01)</small><br />
+    </td>
+    <td class="h5">
+      <small class="xg">Requires PHP &gt;= 5.1.0 w/ PCRE support.<br /></small>
+      <small class="xr">Not available via Composer/Packagist.</small>
+    </td>
+  </tr>
+  <tr><td class="h1t" colspan="2" style="filter:brightness(80%)"></td></tr>
+  <tr>
+    <td class="h1l2">
+      <span class="xo">✱</span> <a href="https://github.com/Maikuolan/Cronable/releases/tag/v1.0.0">Cronable 1.0.0</a> <small>(2017.10.29)</small><br />
+      <span class="xo">✱</span> <a href="https://github.com/Maikuolan/Cronable/releases/tag/v1.1.0">Cronable 1.1.0</a> <small>(2018.01.20)</small><br />
+      <span class="xg">✱</span> <a href="https://github.com/Maikuolan/Cronable/releases/tag/v1.2.0">Cronable 1.2.0</a> <small>(2018.09.10)</small><br />
+    </td>
+    <td class="h5">
+      <small class="xg">
+        Requires PHP &gt;= 5.4.0 w/ PCRE support.<br />
+        Compatible with CIDRAM &gt;= 1.2.0<br />
+        Compatible with phpMussel &gt;= 1.1.0<br />
+        Available via Composer/Packagist.
+      </small>
+    </td>
+  </tr>
+  <tr>
+    <td class="h1l2" style="filter:brightness(90%)">
+      <span class="xb">✱</span> Cronable 2.0.0 <small>(T.B.A.)</small><br />
+    </td>
+    <td class="h5" style="filter:brightness(90%)">
+      <small class="xg">
+        Requires PHP &gt;= 7.2.0 w/ PCRE support.<br />
+        Compatible with CIDRAM &gt;= 1.2.0<br />
+        Compatible with phpMussel &gt;= 1.1.0<br />
+      </small>
+      <small class="xb">*Will* be available via Composer/Packagist (when tagged/released).</small>
+    </td>
+  </tr>
+  <tr><td class="h1t" colspan="2" style="filter:brightness(80%)"></td></tr>
+  <tr>
+    <td class="h1l2">
+      <span class="xo">✱</span> <a href="https://github.com/Maikuolan/Common/releases/tag/v1.0.0">Common Classes Package 1.0.0</a> <small>(2019.02.28)</small><br />
+      <span class="xg">✱</span> <a href="https://github.com/Maikuolan/Common/releases/tag/v1.1.0">Common Classes Package 1.1.0</a> <small>(2019.04.29)</small><br />
+    </td>
+    <td class="h5">
+      <small class="xg">
+        Requires PHP &gt;= 5.4.0 w/ PCRE support.<br />
+        Available via Composer/Packagist.
+      </small>
+    </td>
+  </tr>
+  <tr>
+    <td class="h1l2" style="filter:brightness(90%)">
+      <span class="xb">✱</span> Common Classes Package 2.0.0 <small>(T.B.A.)</small><br />
+    </td>
+    <td class="h5" style="filter:brightness(90%)">
+      <small class="xg">Requires PHP &gt;= 7.2.0 w/ PCRE support.<br /></small>
+      <small class="xb">*Will* be available via Composer/Packagist (when tagged/released).</small>
+    </td>
+  </tr>
+  <tr><td class="h1t" colspan="2" style="filter:brightness(80%)"></td></tr>
+  <tr>
+    <td class="h1l2 eol" style="filter:brightness(90%)">
+      <span class="xg">✱</span><span class="xr">✱</span> <a href="https://github.com/phpMussel/plugin-legacy/releases/tag/v1.0.1">Legacy 1.0.1</a> <small>(2016.05.29)<br />
+      (Intended as final release; No new versions/releases planned).</small>
+    </td>
+    <td class="h5 eol" style="filter:brightness(90%)">
+      <small class="xg">Requires phpMussel &gt;= 1.0.0 &lt; 2.0.0<br /></small>
+      <small class="xr">(Won't be releasing any new versions for compatibility with phpMussel &gt;= 2.0.0)<br /></small>
+      <small class="xg">
+        Requires PHP &gt;= 5.4.0<br />
+        Available via the phpMussel front-end updates page.<br />
+      </small>
+      <small class="xr">Not available via Composer/Packagist.</small>
+    </td>
+  </tr>
+  <tr>
+    <td class="h1l2">
+      <span class="xg">✱</span> <a href="https://github.com/mtrefzer/plugin-log2mysql">log2mysql 1.0.0</a> <small>(2016.06.29)<br />
+        log2mysql authored/released by <a href="https://github.com/mtrefzer">mtrefzer</a>.
+      </small><br />
+    </td>
+    <td class="h5">
+      <small class="xg">
+        Requires phpMussel &gt;= 1.0.0<br />
+        Requires PHP &gt;= 5.4.0 w/ PDO support.<br />
+        Available via the phpMussel front-end updates page.<br />
+      </small>
+      <small class="xr">Not available via Composer/Packagist.</small>
+    </td>
+  </tr>
+  <tr>
+    <td class="h1l2">
+      <span class="xg">✱</span> <a href="https://github.com/phpMussel/plugin-notifications/releases/tag/v2.0.0">Notifications 2.0.0</a> <small>(2017.04.03) <span class="xr">[BC+S]</span><br />
+        (Don't use older versions/releases; EoL/deprecation/BC)
+      </small><br />
+    </td>
+    <td class="h5">
+      <small class="xg">
+        Requires phpMussel &gt;= 1.0.0<br />
+        Requires PHP &gt;= 5.4.0<br />
+        Available via the phpMussel front-end updates page.<br />
+        Available via Composer/Packagist.
+      </small>
+    </td>
+  </tr>
+  <tr>
+    <td class="h1l2">
+      <span class="xg">✱</span> <a href="https://github.com/mtrefzer/plugin-resultAsJson">resultAsJson 1.0.1</a> <small>(2017.07.13)<br />
+        resultAsJson authored/released by <a href="https://github.com/mtrefzer">mtrefzer</a>.</small><br />
+    </td>
+    <td class="h5">
+      <small class="xg">
+        Requires phpMussel &gt;= 1.0.0<br />
+        Requires PHP &gt;= 5.4.0<br />
+        Available via the phpMussel front-end updates page.<br />
+      </small>
+      <small class="xr">Not available via Composer/Packagist.</small>
+    </td>
+  </tr>
+  <tr><td class="h1t" colspan="2" style="filter:brightness(80%)"></td></tr>
+  <tr>
+    <td class="h1l2">
+      <span class="xo">✱</span> <a href="https://github.com/shieldfy/shieldfy-php-client/releases/tag/3.0.1">Shieldfy PHP SDK 3.0.1</a> <small>(2018.04.10)</small><br />
+      <span class="xo">✱</span> <a href="https://github.com/shieldfy/shieldfy-php-client/releases/tag/3.0.2">Shieldfy PHP SDK 3.0.2</a> <small>(2018.07.16)</small><br />
+      <span class="xo">✱</span> <a href="https://github.com/shieldfy/shieldfy-php-client/releases/tag/3.0.3">Shieldfy PHP SDK 3.0.3</a> <small>(2018.08.05)</small><br />
+      <span class="xo">✱</span> <a href="https://github.com/shieldfy/shieldfy-php-client/releases/tag/3.0.6">Shieldfy PHP SDK 3.0.6</a> <small>(2018.09.18)</small><br />
+      <span class="xo">✱</span> <a href="https://github.com/shieldfy/shieldfy-php-client/releases/tag/3.1.0">Shieldfy PHP SDK 3.1.0</a> <small>(2018.10.16)</small><br />
+      <span class="xo">✱</span> <a href="https://github.com/shieldfy/shieldfy-php-client/releases/tag/3.1.1">Shieldfy PHP SDK 3.1.1</a> <small>(2018.11.19)</small><br />
+      <span class="xo">✱</span> <a href="https://github.com/shieldfy/shieldfy-php-client/releases/tag/3.2.0">Shieldfy PHP SDK 3.2.0</a> <small>(2019.04.29)</small><br />
+      <span class="xg">✱</span> <a href="https://github.com/shieldfy/shieldfy-php-client/releases/tag/3.2.1">Shieldfy PHP SDK 3.2.1</a> <small>(2019.04.29)</small><br />
+      <small>Shieldfy PHP SDK authored/released by <a href="https://shieldfy.io/">Shieldfy</a>.</small><br />
+    </td>
+    <td class="h5">
+      <small class="xg">
+        Requires PHP &gt;= 5.6.0 w/ PCRE support.<br />
+        Available via Composer/Packagist.
+      </small>
+    </td>
+  </tr>
+  <tr><td class="h1t" colspan="2" style="filter:brightness(80%)"></td></tr>
+  <tr>
+    <td class="h1l2">
+      <span class="xo">✱</span> NinjaFirewall (WP) 3.8.4 <small>(2019.03.26)</small><br />
+      <span class="xg">✱</span> <a href="https://wordpress.org/plugins/ninjafirewall">NinjaFirewall (WP) 3.9.1</a> <small>(2019.04.21)</small><br />
+      <small>NinjaFirewall (WP) authored/released by <a href="https://nintechnet.com/ninjafirewall/">NinTechNet</a>.<br /></small>
+    </td>
+    <td class="h5">
+      <small class="xg">
+        Requires PHP &gt;= 5.3.0 w/ PCRE support.<br />
+        (PHP &gt;= 5.4.0 recommended for best performance/features)<br />
+        Requires WordPress &gt;= 3.7.0<br />
+      </small><small class="xr">
+        Not compatible with Windows O.S. (requires Unix-like O.S.; e.g., Linux, BSD, etc).<br />
+        Not available via Composer/Packagist.<br />
+      </small><small>
+        According to the docs, all available versions should have the same compatibility.<br />
+        (I haven't tested this extensively, but I assume that this is corrrect).<br />
+      </small>
+    </td>
   </tr>
 </table>
 

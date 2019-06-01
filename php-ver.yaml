@@ -1,5 +1,5 @@
-Updated: "2019.05.18"
-Stable: "7.3.5"
+Updated: "2019.06.01"
+Stable: "7.3.6"
 Unstable: "7.4.0"
 Branch:
  php50:
@@ -27,15 +27,15 @@ Branch:
   Latest: "7.0.33"
   WarnMin: "*"
  php71:
-  Latest: "7.1.28"
-  WarnMin: "7.1.28"
+  Latest: "7.1.30"
+  WarnMin: "7.1.29"
  php72:
-  Latest: "7.2.18"
-  WarnMin: "7.2.16"
+  Latest: "7.2.19"
+  WarnMin: "7.2.18"
  php73:
-  Latest: "7.3.5"
-  WarnMin: "7.3.3"
+  Latest: "7.3.6"
+  WarnMin: "7.3.5"
  php74:
   Latest: "Branch first release still being developed; not yet stable"
-  WarnMin: "7.3.3"
+  WarnMin: "7.3.5"
 

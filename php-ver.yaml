@@ -1,41 +1,29 @@
-Updated: "2019.11.30"
-Stable: "7.4.0"
+Updated: "2019.12.19"
+Stable: "7.4.1"
 Unstable: "-"
 Branch:
  php50:
   Latest: "5.0.5"
-  WarnMin: "*"
  php51:
   Latest: "5.1.6"
-  WarnMin: "*"
  php52:
   Latest: "5.2.17"
-  WarnMin: "*"
  php53:
   Latest: "5.3.29"
-  WarnMin: "*"
  php54:
   Latest: "5.4.45"
-  WarnMin: "*"
  php55:
   Latest: "5.5.38"
-  WarnMin: "*"
  php56:
   Latest: "5.6.40"
-  WarnMin: "*"
  php70:
   Latest: "7.0.33"
-  WarnMin: "*"
  php71:
   Latest: "7.1.33"
-  WarnMin: "7.1.30"
  php72:
-  Latest: "7.2.25"
-  WarnMin: "7.2.19"
+  Latest: "7.2.26"
  php73:
-  Latest: "7.3.12"
-  WarnMin: "7.3.6"
+  Latest: "7.3.13"
  php74:
-  Latest: "7.4.0"
-  WarnMin: "7.3.6"
+  Latest: "7.4.1"
 

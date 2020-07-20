@@ -1,10 +1,12 @@
-Updated: "2020.07.12"
-Stable: "2.1.5"
+Updated: "2020.07.20"
+Stable: "3.0.0"
 Stable Minimum PHP Required: "7.2.0"
-Unstable: "3.0.0"
+Unstable: "3.0.1"
 Branch:
  v1:
   Latest: "1.13.5"
  v2:
   Latest: "2.1.5"
+ v3:
+  Latest: "3.0.0"
 

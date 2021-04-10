@@ -17,13 +17,14 @@
   <span class="xo">✱</span> <small>Version is outdated, but support will normally still be provided.</small><br />
   <span class="xr">✱</span> <small>Version is outdated. Support won't normally be provided. <u class="xr">Please update ASAP</u>!</small><br />
   <span class="xb">✱</span> <small>Version hasn't been released yet (planned or still under development).</small><br />
-  <span class="xg">✱</span><small class="xr">[F]</small> <small>Final expected version (future releases aren't expected).</small><br />
-  <span class="xg">✱</span><small class="xr">[FB]</small> <small>Final expected version on this branch (future releases on this branch aren't expected).</small><br />
   <br />
-  <small><span class="xr">[BC]</span> This version/release <u>significantly</u> breaks (b)ackwards-(c)ompatibility with previous versions/releases (in ways other than just the minimum required PHP version).</small><br />
-  <small><span class="xr">[S]</span> This version/release immediately ends continued (s)upport for all previous versions/releases (for any reason; bugs in previous versions, legal reasons, maintainbility difficulties, etc).</small><br />
-  <small><span class="xr">[V]</span> This version/release fixes one or more dangerous <u>(v)ulnerabilities</u> discovered in a previous version/release. If using an older version/release, <u class="xr">please update ASAP</u>!</small><br />
   <small><span class="xr">[A]</span> This version/release is an <u>(a)lpha</u>. Production use isn't recommended.</small><br />
+  <small><span class="xr">[B]</span> Critical (b)ugs or unintended (b)reaks detected in this version. Avoid usage.</small><br />
+  <small><span class="xr">[BC]</span> This version/release <u>significantly</u> breaks (b)ackwards-(c)ompatibility with previous versions/releases (in ways other than just the minimum required PHP version).</small><br />
+  <small><span class="xr">[F]</span> Final expected version (future releases aren't expected).</small><br />
+  <small><span class="xr">[FB]</span> Final expected version on this branch (future releases on this <u>branch</u> aren't expected).</small><br />
+  <small><span class="xr">[S]</span> This version/release immediately ends continued (s)upport for all previous versions/releases (for any reason; bugs in previous versions, legal reasons, maintainbility difficulties, etc).</small><br />
+  <small><span class="xr">[V]</span> Security (v)ulnerabilities have been identified belonging to this version/release.</small><br />
   <br />
   See also:<br />
   <small>
@@ -38,7 +39,7 @@
       Compatibility Charts<br />
       <small>
         <em>
-          Last modified: <time datetime="2021-03-03">2021.03.03</time><br />
+          Last modified: <time datetime="2021-04-10">2021.04.10</time><br />
           Only relevant information will be listed here. Information will be delisted when no longer relevant.<br />
           If you find any errors, if you'd like to add something to the list, or to make some changes, please send a pull
           request to the <strong><a href="https://github.com/Maikuolan/Compatibility-Charts">GitHub repository</a></strong> for
@@ -89,7 +90,7 @@
     </td>
   </tr>
   <tr>
-    <td class="h1l2" colspan="2">
+    <td class="h1l2">
       <span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v2.0.0">CIDRAM 2.0.0</a>&nbsp;<small>(2019.06.01)</small><br />
       ⋮<br />
       <span class="xr">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v2.3.0">CIDRAM 2.3.0</a>&nbsp;<small>(2020.01.01)</small><br />
@@ -100,6 +101,9 @@
       <span class="xo">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v2.4.4">CIDRAM 2.4.4</a>&nbsp;<small>(2020.10.05)</small><br />
       <span class="xg">✱</span> CIDRAM (WP Only) 2.4.5 <small>(2021.02.24)</small><br />
       <span class="xg">✱</span> <a href="https://github.com/CIDRAM/CIDRAM/releases/tag/v2.5.0">CIDRAM 2.5.0</a>&nbsp;<small>(2021.03.03)</small><br />
+    </td>
+    <td class="h1l">
+      <span class="xb">✱</span> CIDRAM 3.0.0</a>&nbsp;<small>(T.B.A.)</small><br />
     </td>
     <td class="h5">
       <div class="grad" style="background:linear-gradient(90deg,rgba(255,0,0,0.5) 0% 64%,rgba(0,255,0,0.5) 65% 78%,rgba(255,128,0,0.5) 79%,rgba(0,255,0,0.5) 80% 92%,rgba(0,0,255,0.5) 93%)">
@@ -114,7 +118,7 @@
         (cURL support also recommended for best performance/features)<br />
         (APCU, Memcached, Redis, or PDO support also recommended for best performance/features)<br />
         <br />
-        Available via Composer/Packagist: CIDRAM v2.<br />
+        Available via Composer/Packagist: CIDRAM &gt;= v2.<br />
       </small>
       <small class="xr">
         Not available via Composer/Packagist: CIDRAM (WP Only) v[Any].<br />
@@ -131,15 +135,13 @@
     <td class="h1l2" colspan="2">
       <span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.10.0">phpMussel 1.10.0</a>&nbsp;<small>(2019.04.30)</small><br />
       ⋮<br />
-      <span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.12.0">phpMussel 1.12.0</a>&nbsp;<small>(2019.08.31)</small><br />
-      <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.13.0">phpMussel 1.13.0</a>&nbsp;<small>(2019.10.02)</small><br />
-      <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.13.1">phpMussel 1.13.1</a>&nbsp;<small>(2020.01.01)</small><br />
-      <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.13.2">phpMussel 1.13.2</a>&nbsp;<small>(2020.03.01)</small><br />
+      <span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.13.2">phpMussel 1.13.2</a>&nbsp;<small>(2020.03.01)</small><br />
       <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.13.3">phpMussel 1.13.3</a>&nbsp;<small>(2020.06.15)</small><br />
       <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.13.4">phpMussel 1.13.4</a>&nbsp;<small>(2020.06.19)</small><br />
       <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.13.5">phpMussel 1.13.5</a>&nbsp;<small>(2020.07.03)</small><br />
       <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.13.6">phpMussel 1.13.6</a>&nbsp;<small>(2020.10.01)</small><br />
-      <span class="xg">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.14.0">phpMussel 1.14.0</a>&nbsp;<small>(2020.12.04)</small><br />
+      <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.14.0">phpMussel 1.14.0</a>&nbsp;<small>(2020.12.04)</small><br />
+      <span class="xg">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v1.14.1">phpMussel 1.14.1</a>&nbsp;<small>(2021.04.10)</small><br />
     </td>
     <td class="h5">
       <div class="grad" style="background:linear-gradient(90deg,rgba(255,0,0,0.5) 0% 29%,rgba(255,128,0,0.5) 30% 64%,rgba(0,255,0,0.5) 65% 78%,rgba(255,128,0,0.5) 79%,rgba(0,255,0,0.5) 80% 92%,rgba(0,0,255,0.5) 93%)">
@@ -168,14 +170,14 @@
   <tr>
     <td class="h1l2">
       <span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v2.0.0">phpMussel 2.0.0</a>&nbsp;<small>(2019.08.31)</small><br />
-      <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v2.1.0">phpMussel 2.1.0</a>&nbsp;<small>(2019.10.02)</small><br />
-      <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v2.1.1">phpMussel 2.1.1</a>&nbsp;<small>(2020.01.01)</small><br />
-      <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v2.1.2">phpMussel 2.1.2</a>&nbsp;<small>(2020.03.01)</small><br />
+      ⋮<br />
+      <span class="xr">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v2.1.2">phpMussel 2.1.2</a>&nbsp;<small>(2020.03.01)</small><br />
       <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v2.1.3">phpMussel 2.1.3</a>&nbsp;<small>(2020.06.15)</small><br />
       <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v2.1.4">phpMussel 2.1.4</a>&nbsp;<small>(2020.06.19)</small><br />
       <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v2.1.5">phpMussel 2.1.5</a>&nbsp;<small>(2020.07.03)</small><br />
       <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v2.1.6">phpMussel 2.1.6</a>&nbsp;<small>(2020.10.01)</small><br />
-      <span class="xg">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v2.2.0">phpMussel 2.2.0</a>&nbsp;<small>(2020.12.04)</small><br />
+      <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v2.2.0">phpMussel 2.2.0</a>&nbsp;<small>(2020.12.04)</small><br />
+      <span class="xg">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v2.3.0">phpMussel 2.3.0</a>&nbsp;<small>(2021.04.10)</small><br />
     </td>
     <td class="h1l">
       <span class="xo">✱</span> <a href="https://github.com/phpMussel/phpMussel/releases/tag/v3.0.0">phpMussel 3.0.0</a>&nbsp;<small>(2020.07.20)</small><br />
@@ -513,7 +515,8 @@
     <td class="h1l2" colspan="2">
       <span class="xo">✱</span> NinjaFirewall (WP) 4.3.0 <small>(2020.12.01)</small><br />
       <span class="xo">✱</span> NinjaFirewall (WP) 4.3.1 <small>(2020.12.20)</small><br />
-      <span class="xg">✱</span> <a href="https://wordpress.org/plugins/ninjafirewall">NinjaFirewall (WP) 4.3.2</a>&nbsp;<small>(2021.02.28)</small><br />
+      <span class="xo">✱</span> NinjaFirewall (WP) 4.3.2 <small>(2021.02.28)</small><br />
+      <span class="xg">✱</span> <a href="https://wordpress.org/plugins/ninjafirewall">NinjaFirewall (WP) 4.3.3</a>&nbsp;<small>(2021.04.04)</small><br />
       <small>NinjaFirewall (WP) authored/released by <a href="https://nintechnet.com/ninjafirewall/">NinTechNet</a>.<br /></small>
     </td>
     <td class="h5">

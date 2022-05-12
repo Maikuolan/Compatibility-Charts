@@ -1,4 +1,4 @@
-Updated: "2022.04.23"
+Updated: "2022.05.12"
 Stable: "8.1.5"
 Unstable: "-"
 Branch:
@@ -27,6 +27,6 @@ Branch:
  php74:
   Latest: "7.4.29"
  php80:
-  Latest: "8.0.18"
+  Latest: "8.0.19"
  php81:
   Latest: "8.1.5"

@@ -1,5 +1,5 @@
-Updated: "2022.05.12"
-Stable: "8.1.5"
+Updated: "2022.05.25"
+Stable: "8.1.6"
 Unstable: "-"
 Branch:
  php50:
@@ -29,4 +29,4 @@ Branch:
  php80:
   Latest: "8.0.19"
  php81:
-  Latest: "8.1.5"
+  Latest: "8.1.6"

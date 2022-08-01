@@ -1,11 +1,11 @@
-Updated: "2022.07.14"
-Stable: "2.9.0"
+Updated: "2022.08.02"
+Stable: "2.9.1"
 Stable Minimum PHP Required: "7.2.0"
 Unstable: "3.0.0"
 Branch:
  v1:
-  Latest: "1.22.0"
+  Latest: "1.22.1"
  v2:
-  Latest: "2.9.0"
+  Latest: "2.9.1"
  v3:
   Latest: "3.0.0-beta1"

@@ -14,20 +14,12 @@
 
 <p><strong>
   <small><span class="xg">[L]</span> Latest available/tagged version on this branch.</small><br />
-  <small><small class="xr">[NS]</small> Version isn't normally supported anymore. (This doesn't indicate abandonment nor EOL. It indicates that when seeking support for this version, the most likely outcome will be a recommendation to update to a newer version; i.e., there may be bugs present within this version, fixed since newer versions, with updating being a much more efficient and practical solution than attempting to provide support for this version).</small><br />
   <small><span class="xb">[TBA]</span> Version hasn't been released yet. (Planned or still under development).</small><br />
-  <small><span class="xb">[CR]</span> Contextual release. (Mightn't have the same availability as other releases, or may be available only in specific contexts).</small><br />
-  <br />
-  <small><span class="xr">[A]</span> This version/release is an <u>alpha</u>. You <u>could</u> use it in production, but doing so is <u>not recommended</u>.</small><br />
-  <small><span class="xr">[B]</span> Critical bugs or unintended breaks detected in this version (meaning that the version is effectively unusable). <u>Avoid usage!</u></small><br />
-  <small><span class="xr">[BC]</span> This version/release <u>significantly</u> breaks backwards-compatibility. When updating from an earlier version, review all changes carefully.</small><br />
-  <small><span class="xr">[F]</span> Final expected version. Future releases aren't expected on <u>any</u> branch. This generally suggests abandonment or EOL ("end of life") status.</small><br />
-  <small><span class="xr">[FB]</span> Final expected version on this branch. Future releases aren't expected on <u>this</u> branch, but may occur on <u>other</u>, <u>newer</u> branches.</small><br />
   <small><span class="xr">[V]</span> Security vulnerabilities have been identified belonging to this version/release. <u>Avoid usage!</u></small><br />
   <br />
   See also:<br />
   <small>
-    <a href="https://maikuolan.github.io/Vulnerability-Charts/php.html">Vulnerability Charts</a><br />
+    <a href="https://maikuolan.github.io/Vulnerability-Charts">Vulnerability Charts</a><br />
     <a href="https://php.net/releases/">PHP releases</a>
   </small>
 </strong></p>
@@ -38,7 +30,7 @@
       Compatibility Charts<br />
       <small>
         <em>
-          Last modified: <time datetime="2022-10-30">2022.10.30</time><br />
+          Last modified: <time datetime="2022-11-20">2022.11.20</time><br />
           Only relevant information will be listed here. Information will be delisted when no longer relevant.<br />
           If you find any errors, if you'd like to add something to the list, or to make some changes, please send a pull
           request to the <strong><a href="https://github.com/Maikuolan/Compatibility-Charts">GitHub repository</a></strong> for
@@ -167,53 +159,6 @@
   <tr><td class="h1t" colspan="3" style="filter:brightness(80%)"></td></tr>
   <tr>
     <td class="h1l2" colspan="2">
-      <a href="https://github.com/phpMussel/SigTool/releases/tag/v1.0.0">SigTool 1.0.0</a> <small>(2020.03.07)</small><br />
-      <a href="https://github.com/phpMussel/SigTool/releases/tag/v1.0.1">SigTool 1.0.1</a> <small>(2020.12.05)</small><br />
-      <a href="https://github.com/phpMussel/SigTool/releases/tag/v1.0.2">SigTool 1.0.2</a> <small>(2021.05.22)</small><br />
-      <small class="xg">[L]</small> <a href="https://github.com/phpMussel/SigTool/releases/tag/v1.0.3">SigTool 1.0.3</a> <small>(2021.07.22)</small><br />
-    </td>
-    <td class="h5">
-      <div class="grad" style="background:linear-gradient(90deg,rgba(255,0,0,0.5) 0% 43%,rgba(255,128,0,0.5) 44% 55%,rgba(0,255,0,0.5) 56% 85%,rgba(0,0,255,0.5) 86%)">
-        <small style="position:absolute;top:0%;left:44%">PHP≥7.0.3 required (≥7.2 recommended)</small>
-      </div>
-      <div class="grad" style="background:linear-gradient(90deg,rgba(255,0,0,0.5) 0% 1%,rgba(255,128,0,0.5) 2% 30%,rgba(0,255,0,0.5) 31% 47%,rgba(255,128,0,0.5) 48% 53%,rgba(0,255,0,0.5) 54%)">
-        <small style="position:absolute;top:0%;left:2%">Compatible with phpMussel≥1.0.0 (^1.14.1, ≥2.3.0 recommended)</small>
-      </div>
-      <small class="xg">
-        Requires PHP≥7.0.3 w/ PCRE and zlib support (PHP≥7.2 recommended).<br />
-        For SigTool &lt;=1.0.2, phar support also required (not required for≥1.0.3).<br />
-      </small>
-      <small class="xo">At least ≥681 MBs of available RAM required (but, at least ≥1 GB is strongly recommended).<br /></small>
-      <small class="xg">Generated signature files are compatible with phpMussel≥1.0.0<br /></small>
-      <small class="xo">phpMussel ^1.14.1, ≥2.3.0 recommended (due to "signatures.dat" changes).<br /></small>
-      <small class="xr">Generated signature files are NOT compatible with phpMussel &lt;1.0.0<br /></small>
-      <br />
-      <small class="xg">Available via Composer/Packagist.<br /></small>
-      <br />
-      <small>
-        Note: SigTool for phpMussel, and Sigtool for ClamAV, are two distinct, separate packages.<br />
-        The information included here relates to the SigTool for phpMussel.
-      </small>
-    </td>
-  </tr>
-  <tr><td class="h1t" colspan="3" style="filter:brightness(80%)"></td></tr>
-  <tr>
-    <td class="h1l2" colspan="2">
-      <a href="https://github.com/Maikuolan/SFS-Mass-IP-Checker/releases/tag/v1.0.0">SFS Mass IP Checker 1.0.0</a> <small>(2020.11.25)</small><br />
-      <small class="xg">[L]</small> <a href="https://github.com/Maikuolan/SFS-Mass-IP-Checker/releases/tag/v1.0.1">SFS Mass IP Checker 1.0.1</a> <small>(2022.08.16)</small><br />
-    </td>
-    <td class="h5">
-      <div class="grad" style="background:linear-gradient(90deg,rgba(255,0,0,0.5) 0% 25%,rgba(0,255,0,0.5) 26% 85%,rgba(0,0,255,0.5) 86%)">
-        <small style="position:absolute;top:0%;left:26%">PHP≥5.4 required</small>
-      </div>
-      <small class="xg">Requires PHP≥5.4 w/ PCRE support + cURL support.<br /></small>
-      <br />
-      <small class="xg">Available via Composer/Packagist.</small>
-    </td>
-  </tr>
-  <tr><td class="h1t" colspan="3" style="filter:brightness(80%)"></td></tr>
-  <tr>
-    <td class="h1l2" colspan="2">
       <small class="xg">[L]</small> <a href="https://github.com/Maikuolan/Cronable/releases/tag/v1.2.2">Cronable 1.2.2</a> <small>(2021.07.14)</small><br />
     </td>
     <td class="h5">
@@ -232,165 +177,6 @@
         Compatible with phpMussel≥1.1.0&lt;3.0.0 (^1.15.0, ^2.4.0 recommended).<br />
         <br />
         Available via Composer/Packagist.
-      </small>
-    </td>
-  </tr>
-  <tr><td class="h1t" colspan="3" style="filter:brightness(80%)"></td></tr>
-  <tr>
-    <td class="h1l2">
-      <a href="https://github.com/CIDRAM/Aggregator/releases/tag/v1.3.0">Aggregator 1.3.0</a> <small>(2020.01.01)</small><br />
-      <a href="https://github.com/CIDRAM/Aggregator/releases/tag/v1.3.1">Aggregator 1.3.1</a> <small>(2020.06.11)</small><br />
-      <a href="https://github.com/CIDRAM/Aggregator/releases/tag/v1.3.2">Aggregator 1.3.2</a> <small>(2020.12.04)</small><br />
-      <small class="xg">[L]</small> <a href="https://github.com/CIDRAM/Aggregator/releases/tag/v1.3.3">Aggregator 1.3.3</a> <small>(2021.10.23)</small><br />
-    </td>
-    <td class="h1l">
-      <a href="https://github.com/Maikuolan/Common/releases/tag/v1.7.0">Common Classes Package 1.7.0</a> <small>(2021.10.31)</small><br />
-      <a href="https://github.com/Maikuolan/Common/releases/tag/v1.8.0">Common Classes Package 1.8.0</a> <small>(2022.02.14)</small><br />
-      <a href="https://github.com/Maikuolan/Common/releases/tag/v1.9.0">Common Classes Package 1.9.0</a> <small>(2022.02.21)</small><br />
-      <a href="https://github.com/Maikuolan/Common/releases/tag/v1.9.1">Common Classes Package 1.9.1</a> <small>(2022.07.13)</small><br />
-      <small class="xg">[L]</small> <a href="https://github.com/Maikuolan/Common/releases/tag/v1.9.2">Common Classes Package 1.9.2</a> <small>(2022.10.05)</small><br />
-    </td>
-    <td class="h5">
-      <div class="grad" style="background:linear-gradient(90deg,rgba(255,0,0,0.5) 0% 25%,rgba(0,255,0,0.5) 26% 85%,rgba(0,0,255,0.5) 86%)">
-        <small style="position:absolute;top:0%;left:26%">PHP≥5.4 required</small>
-      </div>
-      <small class="xg">
-        Requires PHP≥5.4 w/ PCRE support.<br />
-        <br />
-        Available via Composer/Packagist.
-      </small>
-    </td>
-  </tr>
-  <tr>
-    <td class="h1l2">
-      <small class="xg">[L]</small> <a href="https://github.com/Maikuolan/L10NDateSignOff/releases/tag/v1.0.0">L10NDateSignOff 1.0.0</a> <small>(2021.02.22)</small><br />
-    </td>
-    <td class="h1l">
-      <a href="https://github.com/Maikuolan/Common/releases/tag/v2.7.0">Common Classes Package 2.7.0</a> <small>(2021.10.31)</small><br />
-      <a href="https://github.com/Maikuolan/Common/releases/tag/v2.8.0">Common Classes Package 2.8.0</a> <small>(2022.02.14)</small><br />
-      <a href="https://github.com/Maikuolan/Common/releases/tag/v2.9.0">Common Classes Package 2.9.0</a> <small>(2022.02.21)</small><br />
-      <a href="https://github.com/Maikuolan/Common/releases/tag/v2.9.1">Common Classes Package 2.9.1</a> <small>(2022.07.13)</small><br />
-      <small class="xg">[L]</small> <a href="https://github.com/Maikuolan/Common/releases/tag/v2.9.2">Common Classes Package 2.9.2</a> <small>(2022.10.05)</small><br />
-    </td>
-    <td class="h5">
-      <div class="grad" style="background:linear-gradient(90deg,rgba(255,0,0,0.5) 0% 55%,rgba(0,255,0,0.5) 56% 85%,rgba(0,0,255,0.5) 86%)">
-        <small style="position:absolute;top:0%;left:56%">PHP≥7.2 required</small>
-      </div>
-      <small class="xg">
-        Requires PHP≥7.2 w/ PCRE support.<br />
-        <br />
-        Available via Composer/Packagist.
-      </small>
-    </td>
-  </tr>
-  <tr><td class="h1t" colspan="3" style="filter:brightness(80%)"></td></tr>
-  <tr>
-    <td class="h1l2 eol" colspan="2" style="filter:brightness(90%)">
-      <small class="xr">[NS]</small> ZB Block 0.4.10a3 <small>(2013.01.19)</small><br />
-      <small>Versions &lt;=0.4.10a3 authored/released by Zaphod.</small><br />
-    </td>
-    <td class="h5 eol" style="filter:brightness(90%)">
-      <div class="grad" style="background:linear-gradient(90deg,rgba(255,128,0,0.5) 0% 1%,rgba(0,255,0,0.5) 2% 43%,rgba(255,0,0,0.5) 44%)">
-        <small style="position:absolute;top:0%;left:2%">PHP≥5.0&lt;7.0.0 required</small>
-      </div>
-      <small class="xr">
-        Requires PHP≥5.0&lt;7.0.0 w/ PCRE support.<br />
-        (Latest PHP version in the required PHP version range is already EoL)<br />
-        <br />
-      </small><small class="xo" style="background-color:#fff">
-        *Might* also be compatible with PHP≥4.3, based on manual analysis.<br />
-        However, PHP versions &lt;5.0 don't run correctly at my machines, so I'm unable to confirm this.</br />
-        <br />
-      </small>
-      <small class="xr">Not available via Composer/Packagist.</small>
-    </td>
-  </tr>
-  <tr>
-    <td class="h1l2 eol" colspan="2" style="filter:brightness(90%)">
-      <small class="xr">[NS]</small> <small class="xb">[CR]</small> ZB Block 0.4.20 <small>(2018.01.01)</small><br />
-      <small>Versions ≥0.4.20 authored/released by <a href="https://www.zb-block.net/zbf/member.php?u=2">JamesC</a>.</small><br />
-      <small class="xr">[NS]</small> ZB Block 0.4.21 <small>(2018.02.01)</small><br />
-    </td>
-    <td class="h5 eol" style="filter:brightness(90%)">
-      <div class="grad" style="background:linear-gradient(90deg,rgba(255,0,0,0.5) 0% 1%,rgba(0,255,0,0.5) 2% 67%,rgba(255,128,0,0.5) 68%,rgba(0,255,0,0.5) 69% 85%,rgba(0,0,255,0.5) 86%)">
-        <small style="position:absolute;top:0%;left:2%">PHP≥5.0 required</small>
-      </div>
-      <small class="xg">Requires PHP≥5.0 w/ PCRE support.<br /><br /></small>
-      <small class="xr">" "<br /><br /></small>
-      <small class="xo" style="background-color:#fff">
-        Note: Problems are anticipated for use with PHP 7.4.0 (due to bugs in this PHP version).<br />
-        These bugs are resolved from PHP≥7.4.1 onward.
-      </small>
-    </td>
-  </tr>
-  <tr>
-    <td class="h1l2" colspan="2" style="filter:brightness(90%)">
-      <small class="xr">[NS]</small> <small class="xb">[CR]</small> ZB Block 0.5.0 <small>(2018.02.03)</small><br />
-      ⋮<br />
-      <small class="xr">[NS]</small> <small class="xb">[CR]</small> ZB Block 0.6.1 <small>(2018.05.28)</small><br />
-    </td>
-    <td class="h5" style="filter:brightness(90%)">
-      <div class="grad" style="background:linear-gradient(90deg,rgba(255,0,0,0.5) 0% 7%,rgba(0,255,0,0.5) 8% 67%,rgba(255,128,0,0.5) 68%,rgba(0,255,0,0.5) 69% 85%,rgba(0,0,255,0.5) 86%)">
-        <small style="position:absolute;top:0%;left:8%">PHP≥5.1 required</small>
-      </div>
-      <small class="xg">Requires PHP≥5.1 w/ PCRE support.<br /></small>
-      <small class="xr"><br />" "<br /><br /></small>
-      <small class="xo">" "</small>
-    </td>
-  </tr>
-  <tr>
-    <td class="h1l2" colspan="2" style="filter:brightness(90%)"><small class="xr">[NS]</small> <small class="xb">[CR]</small> ZB Block 0.6.2 <small>(2018.09.09)</small></td>
-    <td class="h5" style="filter:brightness(90%)">
-      <div class="grad" style="background:linear-gradient(90deg,rgba(255,0,0,0.5) 0% 25%,rgba(0,255,0,0.5) 26% 67%,rgba(255,128,0,0.5) 68%,rgba(0,255,0,0.5) 69% 85%,rgba(0,0,255,0.5) 86%)">
-        <small style="position:absolute;top:0%;left:26%">PHP≥5.4 required</small>
-      </div>
-      <small class="xg">Requires PHP≥5.4 w/ PCRE support.<br /></small>
-      <small class="xr"><br />" "<br /><br /></small>
-      <small class="xo">" "</small>
-    </td>
-  </tr>
-  <tr>
-    <td class="h1l2" colspan="2">
-      <small class="xr">[NS]</small> <small class="xb">[CR]</small> ZB Block 0.6.3 <small>(2018.09.12)</small><br />
-      ⋮<br />
-      <small class="xr">[NS]</small> <small class="xb">[CR]</small> ZB Block 0.6.8 <small>(2019.12.14)</small><br />
-      ZB Block 0.7.0 <small>(2020.05.07)</small><br />
-      <small class="xg">[L]</small> ZB Block 0.7.0b <small>(2020.05.14)</small><br />
-    </td>
-    <td class="h5">
-      <div class="grad" style="background:linear-gradient(90deg,rgba(255,0,0,0.5) 0% 7%,rgba(0,255,0,0.5) 8% 67%,rgba(255,128,0,0.5) 68%,rgba(0,255,0,0.5) 69% 85%,rgba(0,0,255,0.5) 86%)">
-        <small style="position:absolute;top:0%;left:8%">PHP≥5.1 required</small>
-      </div>
-      <small class="xg">Requires PHP≥5.1 w/ PCRE support.<br /></small>
-      <br />
-      <small class="xr">Not available via Composer/Packagist.<br /></small>
-      <br />
-      <small class="xo">
-        Note: Problems are anticipated for use with PHP 7.4.0 (due to bugs in this PHP version).<br />
-        These bugs are resolved from PHP≥7.4.1 onward.
-      </small>
-    </td>
-  </tr>
-  <tr><td class="h1t" colspan="3" style="filter:brightness(80%)"></td></tr>
-  <tr>
-    <td class="h1l2" colspan="2">
-      NinjaFirewall (WP) 4.5.0 <small>(2022.02.04)</small><br />
-      ⋮<br />
-      <small class="xg">[L]</small> <a href="https://wordpress.org/plugins/ninjafirewall">NinjaFirewall (WP) 4.5.4</a> <small>(2022.09.07)</small><br />
-      <small>NinjaFirewall (WP) authored/released by <a href="https://nintechnet.com/ninjafirewall/">NinTechNet</a>.<br /></small>
-    </td>
-    <td class="h5">
-      <div class="grad" style="background:linear-gradient(90deg,rgba(255,0,0,0.5) 0% 31%,rgba(0,255,0,0.5) 32% 85%,rgba(0,0,255,0.5) 86%)">
-        <small style="position:absolute;top:0%;left:32%">PHP≥5.5 required</small>
-      </div>
-      <div class="grad" style="background:linear-gradient(90deg,rgba(255,0,0,0.5) 0% 41%,rgba(0,255,0,0.5) 42% 91%,rgba(0,0,255,0.5) 92%)">
-        <small style="position:absolute;top:0%;left:42%">WordPress≥4.7.0 required</small>
-      </div>
-      <small class="xg">
-        Requires PHP≥5.5 w/ PCRE + MySQLi support.<br />
-        Requires WordPress≥4.7.0<br />
-      </small><small class="xr">
-        Not compatible with Windows O.S. (requires Unix-like O.S.; e.g., Linux, BSD, etc).<br />
       </small>
     </td>
   </tr>

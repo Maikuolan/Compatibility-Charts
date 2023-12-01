@@ -1,7 +1,7 @@
-Updated: "2023.11.22"
+Updated: "2023.12.01"
 Stable: "3.4.2"
 Stable Minimum PHP Required: "7.2.0"
-Unstable: "-"
+Unstable: "3.5.0"
 Branch:
  v1:
   Latest: "1.15.5"

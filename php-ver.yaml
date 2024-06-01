@@ -1,6 +1,6 @@
-Updated: "2024.04.18"
-Stable: "8.3.6"
-Unstable: "-"
+Updated: "2024.06.01"
+Stable: "8.3.7"
+Unstable: "8.4.0"
 Branch:
  php50:
   Latest: "5.0.5"
@@ -31,6 +31,6 @@ Branch:
  php81:
   Latest: "8.1.28"
  php82:
-  Latest: "8.2.18"
+  Latest: "8.2.19"
  php83:
-  Latest: "8.3.6"
+  Latest: "8.3.7"

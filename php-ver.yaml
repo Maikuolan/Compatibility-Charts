@@ -1,4 +1,4 @@
-Updated: "2024.09.09"
+Updated: "2024.09.21"
 Stable: "8.3.11"
 Unstable: "8.4.0"
 Branch:
@@ -35,4 +35,4 @@ Branch:
  php83:
   Latest: "8.3.11"
  php84:
-  Latest: "8.4.0-beta4"
+  Latest: "8.4.0-beta5"

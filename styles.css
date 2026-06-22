@@ -4,7 +4,7 @@ body{font-size:12px;font-family:'Noto Sans','Lucida Grande','Tahoma','Verdana','
 hr{border-style:solid none none;margin:5px 2px 0;padding:2px;color:#900}
 small{font-size:10px}
 table{font-weight:700}
-td{margin:auto;padding:auto;min-width:30px}
+td{margin:auto;padding:unset;min-width:30px}
 .ci,.co{margin:auto;width:98%;padding:12px}
 .ci,hr,.grad{border-width:1px}
 .ci{background-color:#fff;border-style:solid;border-color:#aaa;text-align:left}
